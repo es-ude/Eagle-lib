@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -105,6 +105,13 @@
 <smd name="P$5" x="0.95" y="1.4" dx="0.6" dy="1.1" layer="1" rot="R180"/>
 <rectangle x1="-1.35" y1="-0.6" x2="1.35" y2="0.6" layer="21"/>
 </package>
+<package name="SC70">
+<smd name="2" x="0" y="-1.1" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="3" x="0.65" y="-1.1" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="1" x="-0.65" y="-1.1" dx="0.9" dy="0.4" layer="1" rot="R90"/>
+<smd name="5" x="-0.65" y="1.1" dx="0.9" dy="0.4" layer="1" rot="R270"/>
+<smd name="4" x="0.65" y="1.1" dx="0.9" dy="0.4" layer="1" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TEMP_SENSOR">
@@ -180,6 +187,23 @@
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMT87">
+<gates>
+<gate name="G$1" symbol="TEMP_SENSOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC70">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="VO" pad="3"/>
+<connect gate="G$1" pin="VS" pad="1 4 5"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
