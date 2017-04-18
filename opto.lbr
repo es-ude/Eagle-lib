@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -74,7 +74,7 @@
 <package name="T1">
 <pad name="1" x="-1.27" y="0" drill="0.7" diameter="1.4224"/>
 <pad name="2" x="1.27" y="0" drill="0.7" diameter="1.4224"/>
-<text x="-0.75" y="0.25" size="1.27" layer="21">+</text>
+<text x="-0.95" y="1.25" size="1.27" layer="21" font="vector" align="center">+</text>
 <circle x="0" y="0" radius="2.2" width="0.127" layer="21"/>
 <text x="-2.25" y="2.25" size="1.27" layer="21" rot="R180">&gt;NAME</text>
 </package>
