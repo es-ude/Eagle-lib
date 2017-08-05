@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.2">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -161,6 +161,7 @@
 <pad name="P$2" x="0.5" y="0.5" drill="0.3" diameter="0.6096"/>
 <pad name="P$3" x="0.5" y="-0.5" drill="0.3" diameter="0.6096"/>
 <pad name="P$4" x="-0.5" y="-0.5" drill="0.3" diameter="0.6096"/>
+<circle x="-2.25" y="1.5" radius="0.15" width="0.125" layer="21"/>
 </package>
 </packages>
 <symbols>
