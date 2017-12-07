@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -175,11 +175,15 @@
 <wire x1="3.81" y1="2.54" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-2.54" x2="-3.81" y2="2.54" width="0.127" layer="21"/>
 <smd name="4" x="0" y="2.5" dx="2" dy="3" layer="1"/>
-<smd name="3" x="0" y="-2.5" dx="2" dy="3" layer="1"/>
+<smd name="3" x="0" y="-2.58" dx="2" dy="3" layer="1"/>
 <smd name="6" x="2.54" y="2.5" dx="2" dy="3" layer="1"/>
 <smd name="2" x="-2.54" y="2.5" dx="2" dy="3" layer="1"/>
 <smd name="1" x="-2.54" y="-2.58" dx="2" dy="3" layer="1"/>
 <smd name="5" x="2.54" y="-2.58" dx="2" dy="3" layer="1"/>
+<wire x1="-0.5" y1="-4.5" x2="0.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-4.5" x2="0.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="0.5" y1="-5.5" x2="-0.5" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="-5.5" x2="-0.5" y2="-4.5" width="0.127" layer="21"/>
 </package>
 <package name="6X1_FTDI_SMT">
 <wire x1="7.62" y1="1.27" x2="7.62" y2="-1.27" width="0.127" layer="21"/>
@@ -380,7 +384,7 @@
 <wire x1="-2.5" y1="-12.85" x2="-2.5" y2="12.85" width="0.127" layer="21"/>
 <wire x1="-2.5" y1="12.85" x2="2.5" y2="12.85" width="0.127" layer="21"/>
 <wire x1="2.5" y1="-12.85" x2="-2.5" y2="-12.85" width="0.127" layer="21"/>
-<text x="0" y="14.125" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="12.954" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="SPST_DIP4_SMT">
 <wire x1="-5.57" y1="3.1" x2="5.57" y2="3.1" width="0.127" layer="21"/>
@@ -396,6 +400,16 @@
 <smd name="4" x="3.79" y="4.45" dx="1.1" dy="1.5" layer="1" rot="R180"/>
 <smd name="6" x="1.25" y="-4.45" dx="1.1" dy="1.5" layer="1"/>
 <smd name="5" x="3.79" y="-4.45" dx="1.1" dy="1.5" layer="1"/>
+</package>
+<package name="LED_HEADER">
+<pad name="3" x="0" y="0" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="1" x="0" y="2.54" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="5" x="0" y="-2.54" drill="1" diameter="1.6764" rot="R90"/>
+<wire x1="-2.5" y1="5" x2="5" y2="5" width="0.127" layer="21"/>
+<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="21"/>
+<wire x1="5" y1="-5" x2="-2.54" y2="-5" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-5" x2="-2.54" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="5" x2="-2.5" y2="1.75" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -647,6 +661,15 @@
 <wire x1="-9" y1="-9" x2="-2" y2="-9" width="0.254" layer="94"/>
 <wire x1="-2" y1="-9" x2="1" y2="-7" width="0.254" layer="94"/>
 <text x="0" y="12.7" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+</symbol>
+<symbol name="LED_HEADER">
+<pin name="DATA" x="-10.54" y="0" length="middle"/>
+<pin name="GND" x="-10.54" y="6" length="middle"/>
+<pin name="VCC" x="-10.54" y="-6" length="middle"/>
+<wire x1="-5.54" y1="9" x2="-5.54" y2="-9" width="0.254" layer="94"/>
+<wire x1="-5.54" y1="-9" x2="3" y2="-9" width="0.254" layer="94"/>
+<wire x1="3" y1="-9" x2="3" y2="9" width="0.254" layer="94"/>
+<wire x1="3" y1="9" x2="-5.54" y2="9" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1039,6 +1062,23 @@
 <connect gate="G$1" pin="3Y" pad="6"/>
 <connect gate="G$1" pin="4X" pad="4"/>
 <connect gate="G$1" pin="4Y" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LED_HEADER" prefix="J">
+<gates>
+<gate name="G$1" symbol="LED_HEADER" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LED_HEADER">
+<connects>
+<connect gate="G$1" pin="DATA" pad="3"/>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
