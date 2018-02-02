@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -601,6 +601,57 @@
 <smd name="42" x="-1.5" y="3.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
 <smd name="43" x="-2" y="3.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
 <smd name="44" x="-2.5" y="3.4" dx="0.25" dy="0.7" layer="1" rot="R180"/>
+</package>
+<package name="TQFP44">
+<smd name="1" x="-5.7" y="4" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="2" x="-5.7" y="3.2" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="3" x="-5.7" y="2.4" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="4" x="-5.7" y="1.6" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="5" x="-5.7" y="0.8" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="6" x="-5.7" y="0" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="7" x="-5.7" y="-0.8" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="8" x="-5.7" y="-1.6" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="9" x="-5.7" y="-2.4" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="10" x="-5.7" y="-3.2" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="11" x="-5.7" y="-4" dx="1.5" dy="0.55" layer="1" rot="R180"/>
+<smd name="12" x="-4" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="13" x="-3.2" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="14" x="-2.4" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="15" x="-1.6" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="16" x="-0.8" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="17" x="0" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="18" x="0.8" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="19" x="1.6" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="20" x="2.4" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="21" x="3.2" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="22" x="4" y="-5.7" dx="1.5" dy="0.55" layer="1" rot="R270"/>
+<smd name="23" x="5.7" y="-4" dx="1.5" dy="0.55" layer="1"/>
+<smd name="24" x="5.7" y="-3.2" dx="1.5" dy="0.55" layer="1"/>
+<smd name="25" x="5.7" y="-2.4" dx="1.5" dy="0.55" layer="1"/>
+<smd name="26" x="5.7" y="-1.6" dx="1.5" dy="0.55" layer="1"/>
+<smd name="27" x="5.7" y="-0.8" dx="1.5" dy="0.55" layer="1"/>
+<smd name="28" x="5.7" y="0" dx="1.5" dy="0.55" layer="1"/>
+<smd name="29" x="5.7" y="0.8" dx="1.5" dy="0.55" layer="1"/>
+<smd name="30" x="5.7" y="1.6" dx="1.5" dy="0.55" layer="1"/>
+<smd name="31" x="5.7" y="2.4" dx="1.5" dy="0.55" layer="1"/>
+<smd name="32" x="5.7" y="3.2" dx="1.5" dy="0.55" layer="1"/>
+<smd name="33" x="5.7" y="4" dx="1.5" dy="0.55" layer="1"/>
+<smd name="34" x="4" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="35" x="3.2" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="36" x="2.4" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="37" x="1.6" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="38" x="0.8" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="39" x="0" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="40" x="-0.8" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="41" x="-1.6" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="42" x="-2.4" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="43" x="-3.2" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<smd name="44" x="-4" y="5.7" dx="1.5" dy="0.55" layer="1" rot="R90"/>
+<wire x1="-4.4" y1="4.4" x2="4.4" y2="4.4" width="0.127" layer="21"/>
+<wire x1="4.4" y1="4.4" x2="4.4" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="4.4" y1="-4.4" x2="-4.4" y2="-4.4" width="0.127" layer="21"/>
+<wire x1="-4.4" y1="-4.4" x2="-4.4" y2="4.4" width="0.127" layer="21"/>
+<circle x="-5.6" y="5.6" radius="0.4" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1307,13 +1358,59 @@
 <gate name="G$1" symbol="ATMEGA32U4" x="2" y="1"/>
 </gates>
 <devices>
-<device name="" package="QFN44">
+<device name="QFN" package="QFN44">
 <connects>
 <connect gate="G$1" pin="AREF" pad="42"/>
 <connect gate="G$1" pin="AVCC" pad="24 44"/>
 <connect gate="G$1" pin="D+" pad="4"/>
 <connect gate="G$1" pin="D-" pad="3"/>
 <connect gate="G$1" pin="GND" pad="15 23 35 43 45"/>
+<connect gate="G$1" pin="PB0(SS/PCINT0)" pad="8"/>
+<connect gate="G$1" pin="PB1(PCINT1/SCL)" pad="9"/>
+<connect gate="G$1" pin="PB2(PDI/PCINT2/MOSI)" pad="10"/>
+<connect gate="G$1" pin="PB3(PDO/PCINT3/MISO)" pad="11"/>
+<connect gate="G$1" pin="PB4(PCINT4/ADC11)" pad="28"/>
+<connect gate="G$1" pin="PB5(PCINT5(OC1A/OC4B/ADC12)" pad="29"/>
+<connect gate="G$1" pin="PB6(PCINT6/OC1B/OC4B/ADC13)" pad="30"/>
+<connect gate="G$1" pin="PB7(PCINT7/OC0A/OC1C/RTS)" pad="12"/>
+<connect gate="G$1" pin="PC6(OC3A/OC4A)" pad="31"/>
+<connect gate="G$1" pin="PC7(ICP3/CLK0/OC4A)" pad="32"/>
+<connect gate="G$1" pin="PD0(OC0B/SCL/INT0)" pad="18"/>
+<connect gate="G$1" pin="PD1(SDA/INT1)" pad="19"/>
+<connect gate="G$1" pin="PD2(RXD1/INT2)" pad="20"/>
+<connect gate="G$1" pin="PD3(TXD1/INT3)" pad="21"/>
+<connect gate="G$1" pin="PD4(ICP1/ADC8)" pad="25"/>
+<connect gate="G$1" pin="PD5(XCK1/CTS)" pad="22"/>
+<connect gate="G$1" pin="PD6(T1/OC4D/ADC9)" pad="26"/>
+<connect gate="G$1" pin="PD7(T0/OC4D/ADC10)" pad="27"/>
+<connect gate="G$1" pin="PE2(HWB)" pad="33"/>
+<connect gate="G$1" pin="PE6(INT6/AIN0)" pad="1"/>
+<connect gate="G$1" pin="PF0(ADC0)" pad="41"/>
+<connect gate="G$1" pin="PF1(ADC1)" pad="40"/>
+<connect gate="G$1" pin="PF4(ADC4/TCK)" pad="39"/>
+<connect gate="G$1" pin="PF5(ADC5/TMS)" pad="38"/>
+<connect gate="G$1" pin="PF6(ADC6/TDO)" pad="37"/>
+<connect gate="G$1" pin="PF7(ADC7/TDI)" pad="36"/>
+<connect gate="G$1" pin="UCAP" pad="6"/>
+<connect gate="G$1" pin="UGND" pad="5"/>
+<connect gate="G$1" pin="UVCC" pad="2"/>
+<connect gate="G$1" pin="VBUS" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="14 34"/>
+<connect gate="G$1" pin="XTAL1" pad="17"/>
+<connect gate="G$1" pin="XTAL2" pad="16"/>
+<connect gate="G$1" pin="_RESET" pad="13"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TQFP" package="TQFP44">
+<connects>
+<connect gate="G$1" pin="AREF" pad="42"/>
+<connect gate="G$1" pin="AVCC" pad="24 44"/>
+<connect gate="G$1" pin="D+" pad="4"/>
+<connect gate="G$1" pin="D-" pad="3"/>
+<connect gate="G$1" pin="GND" pad="15 23 35 43"/>
 <connect gate="G$1" pin="PB0(SS/PCINT0)" pad="8"/>
 <connect gate="G$1" pin="PB1(PCINT1/SCL)" pad="9"/>
 <connect gate="G$1" pin="PB2(PDI/PCINT2/MOSI)" pad="10"/>
