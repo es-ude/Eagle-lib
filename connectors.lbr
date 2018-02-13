@@ -468,12 +468,12 @@
 <smd name="6" x="5.08" y="2.5" dx="2" dy="3" layer="1"/>
 </package>
 <package name="5X2_HEADER_SMT_1.27">
-<smd name="6" x="-2.54" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
+<smd name="10" x="-2.54" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
 <smd name="1" x="-2.54" y="-2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
-<smd name="7" x="-1.27" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
+<smd name="9" x="-1.27" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
 <smd name="8" x="0" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
-<smd name="9" x="1.27" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
-<smd name="10" x="2.54" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
+<smd name="7" x="1.27" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
+<smd name="6" x="2.54" y="2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
 <smd name="2" x="-1.27" y="-2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
 <smd name="3" x="0" y="-2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
 <smd name="4" x="1.27" y="-2" dx="0.74" dy="2.5" layer="1" rot="R180"/>
@@ -1328,15 +1328,15 @@
 <device name="" package="5X2_MALE_HEADER_1.27">
 <connects>
 <connect gate="G$1" pin="1" pad="6"/>
-<connect gate="G$1" pin="10" pad="5"/>
+<connect gate="G$1" pin="10" pad="1"/>
 <connect gate="G$1" pin="2" pad="7"/>
 <connect gate="G$1" pin="3" pad="8"/>
 <connect gate="G$1" pin="4" pad="9"/>
 <connect gate="G$1" pin="5" pad="10"/>
-<connect gate="G$1" pin="6" pad="1"/>
-<connect gate="G$1" pin="7" pad="2"/>
+<connect gate="G$1" pin="6" pad="5"/>
+<connect gate="G$1" pin="7" pad="4"/>
 <connect gate="G$1" pin="8" pad="3"/>
-<connect gate="G$1" pin="9" pad="4"/>
+<connect gate="G$1" pin="9" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
