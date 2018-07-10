@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="9.0.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -668,6 +668,16 @@
 <smd name="6" x="-1.2" y="-0.4" dx="0.4" dy="0.4" layer="1"/>
 <smd name="7" x="-1.2" y="0.4" dx="0.4" dy="0.4" layer="1"/>
 </package>
+<package name="DSBGA4">
+<smd name="A1" x="-0.2" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="A2" x="0.2" y="0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="B2" x="0.2" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<smd name="B1" x="-0.2" y="-0.2" dx="0.24" dy="0.24" layer="1" roundness="100"/>
+<wire x1="-0.45" y1="0.45" x2="0.45" y2="0.45" width="0.127" layer="21"/>
+<wire x1="0.45" y1="0.45" x2="0.45" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="0.45" y1="-0.45" x2="-0.45" y2="-0.45" width="0.127" layer="21"/>
+<wire x1="-0.45" y1="-0.45" x2="-0.45" y2="0.45" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATTINY1634-SU">
@@ -981,6 +991,17 @@
 <wire x1="10" y1="-9" x2="-11" y2="-9" width="0.254" layer="94"/>
 <wire x1="-11" y1="-9" x2="-11" y2="10" width="0.254" layer="94"/>
 <text x="-1" y="11" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+</symbol>
+<symbol name="LMT70">
+<pin name="GND" x="-14" y="1" length="middle"/>
+<pin name="TAO" x="-14" y="-2" length="middle"/>
+<pin name="VDD" x="14" y="1" length="middle" rot="R180"/>
+<pin name="T_ON" x="14" y="-2" length="middle" rot="R180"/>
+<wire x1="-9" y1="4" x2="-9" y2="-5" width="0.254" layer="94"/>
+<wire x1="-9" y1="-5" x2="9" y2="-5" width="0.254" layer="94"/>
+<wire x1="9" y1="-5" x2="9" y2="4" width="0.254" layer="94"/>
+<wire x1="9" y1="4" x2="-9" y2="4" width="0.254" layer="94"/>
+<text x="0" y="5" size="1.778" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1495,6 +1516,24 @@
 <connect gate="G$1" pin="SDO" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
 <connect gate="G$1" pin="VDDIO" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMT70">
+<gates>
+<gate name="G$1" symbol="LMT70" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DSBGA4">
+<connects>
+<connect gate="G$1" pin="GND" pad="A1"/>
+<connect gate="G$1" pin="TAO" pad="B1"/>
+<connect gate="G$1" pin="T_ON" pad="B2"/>
+<connect gate="G$1" pin="VDD" pad="A2"/>
 </connects>
 <technologies>
 <technology name=""/>
