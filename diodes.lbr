@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.1.0">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -98,6 +99,15 @@
 <wire x1="0.8" y1="0" x2="0.8" y2="0.8" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0" x2="0.8" y2="-0.8" width="0.127" layer="21"/>
 </package>
+<package name="SOD123">
+<smd name="ANODE" x="-1.635" y="0" dx="0.91" dy="1.22" layer="1"/>
+<smd name="CATHODE" x="1.635" y="0" dx="0.91" dy="1.22" layer="1"/>
+<wire x1="-0.8" y1="-0.8" x2="-0.8" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-0.8" x2="0.8" y2="0" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0" x2="-0.8" y2="0.8" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0" x2="0.8" y2="0.8" width="0.127" layer="21"/>
+<wire x1="0.8" y1="0" x2="0.8" y2="-0.8" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -135,6 +145,22 @@
 </gates>
 <devices>
 <device name="" package="DO-221AC">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MMSD914T1G">
+<gates>
+<gate name="G$1" symbol="DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD123">
 <connects>
 <connect gate="G$1" pin="A" pad="ANODE"/>
 <connect gate="G$1" pin="C" pad="CATHODE"/>
