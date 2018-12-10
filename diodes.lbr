@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -108,6 +108,14 @@
 <wire x1="0.8" y1="0" x2="0.8" y2="0.8" width="0.127" layer="21"/>
 <wire x1="0.8" y1="0" x2="0.8" y2="-0.8" width="0.127" layer="21"/>
 </package>
+<package name="SMB_STPS3L60U">
+<smd name="A" x="-2.2" y="0" dx="2.2" dy="2.15" layer="1"/>
+<smd name="K" x="2.2" y="0" dx="2.2" dy="2.15" layer="1"/>
+<wire x1="-2.675" y1="1.812" x2="2.675" y2="1.812" width="0.1" layer="51"/>
+<wire x1="2.675" y1="1.812" x2="2.675" y2="-1.812" width="0.1" layer="51"/>
+<wire x1="2.675" y1="-1.812" x2="-2.675" y2="-1.812" width="0.1" layer="51"/>
+<wire x1="-2.675" y1="-1.812" x2="-2.675" y2="1.812" width="0.1" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DIODE">
@@ -120,6 +128,18 @@
 <text x="0" y="2" size="1.778" layer="96" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2" size="1.778" layer="96" font="vector" align="top-center">&gt;VALUE</text>
 <wire x1="1" y1="0" x2="1" y2="-1" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SCHOTTKY_DIODE">
+<pin name="A" x="-3.46" y="0" visible="off" length="short"/>
+<pin name="C" x="3.46" y="0" visible="off" length="short" rot="R180"/>
+<wire x1="-1" y1="1" x2="-1" y2="-1" width="0.254" layer="94"/>
+<wire x1="-1" y1="-1" x2="1" y2="0" width="0.254" layer="94"/>
+<wire x1="1" y1="0" x2="-1" y2="1" width="0.254" layer="94"/>
+<text x="0" y="4.54" size="1.778" layer="96" font="vector" align="bottom-center">&gt;NAME</text>
+<wire x1="1" y1="0" x2="1" y2="2.3" width="0.254" layer="94"/>
+<wire x1="1" y1="2.3" x2="-0.2" y2="2.3" width="0.254" layer="94"/>
+<wire x1="1" y1="0" x2="1" y2="-2.1" width="0.254" layer="94"/>
+<wire x1="1" y1="-2.1" x2="2.1" y2="-2.1" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -161,6 +181,31 @@
 </gates>
 <devices>
 <device name="" package="SOD123">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CATHODE"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SCHOTTKY_DIODE" prefix="D">
+<gates>
+<gate name="G$1" symbol="SCHOTTKY_DIODE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMB_STPS3L60U">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1N5819HW" package="SOD123">
 <connects>
 <connect gate="G$1" pin="A" pad="ANODE"/>
 <connect gate="G$1" pin="C" pad="CATHODE"/>

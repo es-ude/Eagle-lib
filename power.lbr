@@ -212,6 +212,22 @@
 <text x="0" y="0.5" size="0.254" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <circle x="-0.6096" y="0.508" radius="0.091578125" width="0.0762" layer="21"/>
 </package>
+<package name="SOP-8L">
+<smd name="1" x="-2.7" y="1.905" dx="1.5" dy="0.65" layer="1"/>
+<smd name="2" x="-2.7" y="0.635" dx="1.5" dy="0.65" layer="1"/>
+<smd name="3" x="-2.7" y="-0.635" dx="1.5" dy="0.65" layer="1"/>
+<smd name="4" x="-2.7" y="-1.905" dx="1.5" dy="0.65" layer="1"/>
+<smd name="5" x="2.7" y="-1.905" dx="1.5" dy="0.65" layer="1"/>
+<smd name="6" x="2.7" y="-0.635" dx="1.5" dy="0.65" layer="1"/>
+<smd name="7" x="2.7" y="0.635" dx="1.5" dy="0.65" layer="1"/>
+<smd name="8" x="2.7" y="1.905" dx="1.5" dy="0.65" layer="1"/>
+<wire x1="-1.6" y1="2.45" x2="1.6" y2="2.45" width="0.2" layer="21"/>
+<wire x1="1.6" y1="2.45" x2="1.6" y2="-2.45" width="0.2" layer="21"/>
+<wire x1="1.6" y1="-2.45" x2="-1.6" y2="-2.45" width="0.2" layer="21"/>
+<wire x1="-1.6" y1="-2.45" x2="-1.6" y2="2.45" width="0.2" layer="21"/>
+<circle x="-2.3" y="3" radius="0.1" width="0.1524" layer="21"/>
+<text x="-5.08" y="3.81" size="0.889" layer="21" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="LDO_VOLTAGE_REG">
@@ -303,6 +319,21 @@
 <wire x1="7" y1="-7" x2="-3" y2="-7" width="0.254" layer="94"/>
 <wire x1="-3" y1="-7" x2="-3" y2="6" width="0.254" layer="94"/>
 <text x="2" y="7" size="1.6764" layer="95" font="vector" align="bottom-center">&gt;NAME</text>
+</symbol>
+<symbol name="LDO-VR-33-TOP92">
+<wire x1="-10.16" y1="5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<text x="-8.89" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<pin name="VIN" x="-15.24" y="2.54" length="middle"/>
+<pin name="OUTPUT" x="-15.24" y="0" length="middle"/>
+<pin name="FB" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SD" x="-15.24" y="-5.08" length="middle"/>
+<pin name="GND_4" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="GND_3" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="GND_2" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="GND_1" x="17.78" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -477,6 +508,28 @@ Source: &lt;a href="http://datasheets.maximintegrated.com/en/ds/MAX3372E-MAX3393
 <connect gate="G$1" pin="GND" pad="A1"/>
 <connect gate="G$1" pin="VIN" pad="B2"/>
 <connect gate="G$1" pin="VOUT" pad="B1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AP1509-33SG-13">
+<gates>
+<gate name="AP1509-33SG-13" symbol="LDO-VR-33-TOP92" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOP-8L">
+<connects>
+<connect gate="AP1509-33SG-13" pin="FB" pad="3"/>
+<connect gate="AP1509-33SG-13" pin="GND_1" pad="5"/>
+<connect gate="AP1509-33SG-13" pin="GND_2" pad="6"/>
+<connect gate="AP1509-33SG-13" pin="GND_3" pad="7"/>
+<connect gate="AP1509-33SG-13" pin="GND_4" pad="8"/>
+<connect gate="AP1509-33SG-13" pin="OUTPUT" pad="2"/>
+<connect gate="AP1509-33SG-13" pin="SD" pad="4"/>
+<connect gate="AP1509-33SG-13" pin="VIN" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
