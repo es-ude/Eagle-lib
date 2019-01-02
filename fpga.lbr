@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -603,141 +603,144 @@
 <symbol name="SPARTAN7">
 </symbol>
 <symbol name="SPARTAN7_15">
-<pin name="IO_0_14" x="-39" y="21" length="middle"/>
-<pin name="IO_L1P_T0_D00_MOSI_14" x="-39" y="18" length="middle"/>
-<pin name="IO_L1N_T0_D01_DIN_14" x="-39" y="15" length="middle"/>
-<pin name="IO_L2P_T0_D02_14" x="-39" y="12" length="middle"/>
-<pin name="IO_L3P_T0_DQS_PUDC_B_14" x="-39" y="6" length="middle"/>
-<pin name="IO_L2N_T0_D03_14" x="-39" y="9" length="middle"/>
-<pin name="IO_L3N_T0_DQS_EMCCLK_14" x="-39" y="3" length="middle"/>
-<pin name="IO_L4P_T0_D04_14" x="-39" y="0" length="middle"/>
-<pin name="IO_L4N_T0_D05_14" x="-39" y="-3" length="middle"/>
-<pin name="IO_L5P_T0_D06_14" x="-39" y="-6" length="middle"/>
-<pin name="IO_L5N_T0_D07_14" x="-39" y="-9" length="middle"/>
-<pin name="IO_L6P_T0_FCS_B_14" x="-39" y="-12" length="middle"/>
-<pin name="IO_L6N_T0_D08_VREF_14" x="-39" y="-15" length="middle"/>
-<pin name="IO_L7P_T1_D09_14" x="-39" y="-18" length="middle"/>
-<pin name="IO_L7N_T1_D10_14" x="-39" y="-21" length="middle"/>
-<pin name="IO_L8P_T1_D11_14" x="-39" y="-24" length="middle"/>
-<pin name="IO_L8N_T1_D12_14" x="-39" y="-27" length="middle"/>
-<pin name="IO_L9P_T1_DQS_14" x="-39" y="-30" length="middle"/>
-<pin name="IO_L9N_T1_DQS_D13_14" x="-39" y="-33" length="middle"/>
-<pin name="IO_L10P_T1_D14_14" x="-39" y="-36" length="middle"/>
-<pin name="IO_L10N_T1_D15_14" x="-39" y="-39" length="middle"/>
-<pin name="IO_L11P_T1_SRCC_14" x="-39" y="-42" length="middle"/>
-<pin name="IO_L11N_T1_SRCC_14" x="-39" y="-45" length="middle"/>
-<pin name="IO_L12P_T1_MRCC_14" x="-39" y="-48" length="middle"/>
-<pin name="IO_L12N_T1_MRCC_14" x="-39" y="-51" length="middle"/>
-<pin name="IO_L13P_T2_MRCC_14" x="-39" y="-54" length="middle"/>
-<pin name="IO_L13N_T2_MRCC_14" x="-39" y="-57" length="middle"/>
-<pin name="IO_L14P_T2_SRCC_14" x="-39" y="-60" length="middle"/>
-<pin name="IO_L14N_T2_SRCC_14" x="-39" y="-63" length="middle"/>
-<pin name="IO_L15P_T2_DQS_RDWR_B_14" x="-39" y="-66" length="middle"/>
-<pin name="IO_L15N_T2_DQS_DOUT_CSO_B_14" x="-39" y="-69" length="middle"/>
-<pin name="IO_L16P_T2_CSI_B_14" x="-39" y="-72" length="middle"/>
-<pin name="IO_L16N_T2_D31_14" x="-39" y="-75" length="middle"/>
-<pin name="IO_L17P_T2_D30_14" x="-39" y="-78" length="middle"/>
-<pin name="IO_L17N_T2_D29_14" x="-39" y="-81" length="middle"/>
-<pin name="IO_L19N_T3_D25_VREF_14" x="-39" y="-93" length="middle"/>
-<pin name="IO_L20P_T3_D24_14" x="-39" y="-96" length="middle"/>
-<pin name="IO_L20N_T3_D23_14" x="-39" y="-99" length="middle"/>
-<pin name="IO_L21P_T3_DQS_14" x="-39" y="-102" length="middle"/>
-<pin name="IO_L21N_T3_DQS_D22_14" x="-39" y="-105" length="middle"/>
-<pin name="IO_L22P_T3_D21_14" x="-39" y="-108" length="middle"/>
-<pin name="IO_L22N_T3_D20_14" x="-39" y="-111" length="middle"/>
-<pin name="IO_L23P_T3_D19_14" x="-39" y="-114" length="middle"/>
-<pin name="IO_L23N_T3_D18_14" x="-39" y="-117" length="middle"/>
-<pin name="IO_L24P_T3_D17_14" x="-39" y="-120" length="middle"/>
-<pin name="IO_L24N_T3_D16_14" x="-39" y="-123" length="middle"/>
-<pin name="IO_25_14" x="-39" y="-126" length="middle"/>
-<pin name="IO_L18P_T2_D28_14" x="-39" y="-84" length="middle"/>
-<pin name="IO_L18N_T2_D27_14" x="-39" y="-87" length="middle"/>
-<pin name="IO_L19P_T3_D26_14" x="-39" y="-90" length="middle"/>
-<wire x1="-31" y1="24" x2="-34" y2="24" width="0.254" layer="94"/>
-<wire x1="-34" y1="24" x2="-34" y2="-129" width="0.254" layer="94"/>
-<wire x1="-34" y1="-129" x2="-31" y2="-129" width="0.254" layer="94"/>
-<text x="-31" y="26" size="3" layer="97">Bank 14</text>
-<pin name="IO_0_34" x="55" y="21" length="middle" rot="R180"/>
-<pin name="IO_L1P_T0_34" x="55" y="18" length="middle" rot="R180"/>
-<pin name="IO_L1N_T0_34" x="55" y="15" length="middle" rot="R180"/>
-<pin name="IO_L2P_T0_34" x="55" y="12" length="middle" rot="R180"/>
-<pin name="IO_L2N_T0_34" x="55" y="9" length="middle" rot="R180"/>
-<pin name="IO_L3P_T0_DQS_34" x="55" y="6" length="middle" rot="R180"/>
-<pin name="IO_L3N_T0_DQS_34" x="55" y="3" length="middle" rot="R180"/>
-<pin name="IO_L4P_T0_34" x="55" y="0" length="middle" rot="R180"/>
-<pin name="IO_L4N_T0_34" x="55" y="-3" length="middle" rot="R180"/>
-<pin name="IO_L5P_T0_34" x="55" y="-6" length="middle" rot="R180"/>
-<pin name="IO_L5N_T0_34" x="55" y="-9" length="middle" rot="R180"/>
-<pin name="IO_L6P_T0_34" x="55" y="-12" length="middle" rot="R180"/>
-<pin name="IO_L6N_T0_VREF_34" x="55" y="-15" length="middle" rot="R180"/>
-<pin name="IO_L7P_T1_34" x="55" y="-18" length="middle" rot="R180"/>
-<pin name="IO_L7N_T1_34" x="55" y="-21" length="middle" rot="R180"/>
-<pin name="IO_L8P_T1_34" x="55" y="-24" length="middle" rot="R180"/>
-<pin name="IO_L8N_T1_34" x="55" y="-27" length="middle" rot="R180"/>
-<pin name="IO_L9P_T1_DQS_34" x="55" y="-30" length="middle" rot="R180"/>
-<pin name="IO_L9N_T1_DQS_34" x="55" y="-33" length="middle" rot="R180"/>
-<pin name="IO_L10P_T1_34" x="55" y="-36" length="middle" rot="R180"/>
-<pin name="IO_L10N_T1_34" x="55" y="-39" length="middle" rot="R180"/>
-<pin name="IO_L11P_T1_SRCC_34" x="55" y="-42" length="middle" rot="R180"/>
-<pin name="IO_L11N_T1_SRCC_34" x="55" y="-45" length="middle" rot="R180"/>
-<pin name="IO_L12P_T1_MRCC_34" x="55" y="-48" length="middle" rot="R180"/>
-<pin name="IO_L12N_T1_MRCC_34" x="55" y="-51" length="middle" rot="R180"/>
-<pin name="IO_L13P_T2_MRCC_34" x="55" y="-54" length="middle" rot="R180"/>
-<pin name="IO_L13N_T2_MRCC_34" x="55" y="-57" length="middle" rot="R180"/>
-<pin name="IO_L14P_T2_SRCC_34" x="55" y="-60" length="middle" rot="R180"/>
-<pin name="IO_L14N_T2_SRCC_34" x="55" y="-63" length="middle" rot="R180"/>
-<pin name="IO_L15P_T2_DQS_34" x="55" y="-66" length="middle" rot="R180"/>
-<pin name="IO_L15N_T2_DQS_34" x="55" y="-69" length="middle" rot="R180"/>
-<pin name="IO_L16P_T2_34" x="55" y="-72" length="middle" rot="R180"/>
-<pin name="IO_L16N_T2_34" x="55" y="-75" length="middle" rot="R180"/>
-<pin name="IO_L17P_T2_34" x="55" y="-78" length="middle" rot="R180"/>
-<pin name="IO_L17N_T2_34" x="55" y="-81" length="middle" rot="R180"/>
-<pin name="IO_L18P_T2_34" x="55" y="-84" length="middle" rot="R180"/>
-<pin name="IO_L18N_T2_34" x="55" y="-87" length="middle" rot="R180"/>
-<pin name="IO_L19P_T3_34" x="55" y="-90" length="middle" rot="R180"/>
-<pin name="IO_L19N_T3_VREF_34" x="55" y="-93" length="middle" rot="R180"/>
-<pin name="IO_L20P_T3_34" x="55" y="-96" length="middle" rot="R180"/>
-<pin name="IO_L20N_T3_34" x="55" y="-99" length="middle" rot="R180"/>
-<pin name="IO_L21P_T3_DQS_34" x="55" y="-102" length="middle" rot="R180"/>
-<pin name="IO_L21N_T3_DQS_34" x="55" y="-105" length="middle" rot="R180"/>
-<pin name="IO_L22P_T3_34" x="55" y="-108" length="middle" rot="R180"/>
-<pin name="IO_L22N_T3_34" x="55" y="-111" length="middle" rot="R180"/>
-<pin name="IO_L23P_T3_34" x="55" y="-114" length="middle" rot="R180"/>
-<pin name="IO_L23N_T3_34" x="55" y="-117" length="middle" rot="R180"/>
-<pin name="IO_L24P_T3_34" x="55" y="-120" length="middle" rot="R180"/>
-<pin name="IO_L24N_T3_34" x="55" y="-123" length="middle" rot="R180"/>
-<pin name="IO_25_34" x="55" y="-126" length="middle" rot="R180"/>
-<text x="55" y="28" size="3" layer="97" rot="R180">Bank 14</text>
-<wire x1="47" y1="23" x2="50" y2="23" width="0.254" layer="94"/>
-<wire x1="50" y1="23" x2="50" y2="-128" width="0.254" layer="94"/>
-<wire x1="50" y1="-128" x2="47" y2="-128" width="0.254" layer="94"/>
-<pin name="DONE_0" x="-9" y="57" length="middle" rot="R270"/>
-<pin name="TCK_0" x="-6" y="57" length="middle" rot="R270"/>
-<pin name="CCLK_0" x="-3" y="57" length="middle" rot="R270"/>
-<pin name="M0_0" x="0" y="57" length="middle" rot="R270"/>
-<pin name="M1_0" x="3" y="57" length="middle" rot="R270"/>
-<pin name="INIT_B_0" x="6" y="57" length="middle" rot="R270"/>
-<pin name="TDI_0" x="9" y="57" length="middle" rot="R270"/>
-<pin name="TDO_0" x="12" y="57" length="middle" rot="R270"/>
-<pin name="M2_0" x="15" y="57" length="middle" rot="R270"/>
-<pin name="CFGBVS_0" x="18" y="57" length="middle" rot="R270"/>
-<pin name="PROGRAM_B_0" x="21" y="57" length="middle" rot="R270"/>
-<pin name="TMS_0" x="24" y="57" length="middle" rot="R270"/>
-<pin name="DXP_0" x="27" y="57" length="middle" rot="R270"/>
-<pin name="DXN_0" x="30" y="57" length="middle" rot="R270"/>
-<text x="3" y="31" size="3" layer="97">Config</text>
-<pin name="VCCAUX" x="-5" y="-144" length="middle" rot="R90"/>
-<pin name="VCCBRAM" x="13" y="-144" length="middle" rot="R90"/>
-<pin name="VCCINT" x="-2" y="-144" length="middle" rot="R90"/>
-<pin name="GND" x="1" y="-144" length="middle" rot="R90"/>
-<pin name="VCCO_0" x="4" y="-144" length="middle" rot="R90"/>
-<pin name="VCCO_14" x="7" y="-144" length="middle" rot="R90"/>
-<pin name="VCCO_34" x="10" y="-144" length="middle" rot="R90"/>
-<wire x1="-8" y1="-136" x2="-8" y2="-139" width="0.254" layer="94"/>
-<wire x1="-8" y1="-139" x2="16" y2="-139" width="0.254" layer="94"/>
-<wire x1="16" y1="-139" x2="16" y2="-136" width="0.254" layer="94"/>
-<text x="-3" y="-125" size="3" layer="97">POWER</text>
-<text x="8" y="-50" size="3" layer="95" align="bottom-center">&gt;NAME</text>
+<pin name="IO_0_14" x="-47" y="71" length="middle"/>
+<pin name="IO_L1P_T0_D00_MOSI_14" x="-47" y="68" length="middle"/>
+<pin name="IO_L1N_T0_D01_DIN_14" x="-47" y="65" length="middle"/>
+<pin name="IO_L2P_T0_D02_14" x="-47" y="62" length="middle"/>
+<pin name="IO_L3P_T0_DQS_PUDC_B_14" x="-47" y="56" length="middle"/>
+<pin name="IO_L2N_T0_D03_14" x="-47" y="59" length="middle"/>
+<pin name="IO_L3N_T0_DQS_EMCCLK_14" x="-47" y="53" length="middle"/>
+<pin name="IO_L4P_T0_D04_14" x="-47" y="50" length="middle"/>
+<pin name="IO_L4N_T0_D05_14" x="-47" y="47" length="middle"/>
+<pin name="IO_L5P_T0_D06_14" x="-47" y="44" length="middle"/>
+<pin name="IO_L5N_T0_D07_14" x="-47" y="41" length="middle"/>
+<pin name="IO_L6P_T0_FCS_B_14" x="-47" y="38" length="middle"/>
+<pin name="IO_L6N_T0_D08_VREF_14" x="-47" y="35" length="middle"/>
+<pin name="IO_L7P_T1_D09_14" x="-47" y="32" length="middle"/>
+<pin name="IO_L7N_T1_D10_14" x="-47" y="29" length="middle"/>
+<pin name="IO_L8P_T1_D11_14" x="-47" y="26" length="middle"/>
+<pin name="IO_L8N_T1_D12_14" x="-47" y="23" length="middle"/>
+<pin name="IO_L9P_T1_DQS_14" x="-47" y="20" length="middle"/>
+<pin name="IO_L9N_T1_DQS_D13_14" x="-47" y="17" length="middle"/>
+<pin name="IO_L10P_T1_D14_14" x="-47" y="14" length="middle"/>
+<pin name="IO_L10N_T1_D15_14" x="-47" y="11" length="middle"/>
+<pin name="IO_L11P_T1_SRCC_14" x="-47" y="8" length="middle"/>
+<pin name="IO_L11N_T1_SRCC_14" x="-47" y="5" length="middle"/>
+<pin name="IO_L12P_T1_MRCC_14" x="-47" y="2" length="middle"/>
+<pin name="IO_L12N_T1_MRCC_14" x="-47" y="-1" length="middle"/>
+<pin name="IO_L13P_T2_MRCC_14" x="-47" y="-4" length="middle"/>
+<pin name="IO_L13N_T2_MRCC_14" x="-47" y="-7" length="middle"/>
+<pin name="IO_L14P_T2_SRCC_14" x="-47" y="-10" length="middle"/>
+<pin name="IO_L14N_T2_SRCC_14" x="-47" y="-13" length="middle"/>
+<pin name="IO_L15P_T2_DQS_RDWR_B_14" x="-47" y="-16" length="middle"/>
+<pin name="IO_L15N_T2_DQS_DOUT_CSO_B_14" x="-47" y="-19" length="middle"/>
+<pin name="IO_L16P_T2_CSI_B_14" x="-47" y="-22" length="middle"/>
+<pin name="IO_L16N_T2_D31_14" x="-47" y="-25" length="middle"/>
+<pin name="IO_L17P_T2_D30_14" x="-47" y="-28" length="middle"/>
+<pin name="IO_L17N_T2_D29_14" x="-47" y="-31" length="middle"/>
+<pin name="IO_L19N_T3_D25_VREF_14" x="-47" y="-43" length="middle"/>
+<pin name="IO_L20P_T3_D24_14" x="-47" y="-46" length="middle"/>
+<pin name="IO_L20N_T3_D23_14" x="-47" y="-49" length="middle"/>
+<pin name="IO_L21P_T3_DQS_14" x="-47" y="-52" length="middle"/>
+<pin name="IO_L21N_T3_DQS_D22_14" x="-47" y="-55" length="middle"/>
+<pin name="IO_L22P_T3_D21_14" x="-47" y="-58" length="middle"/>
+<pin name="IO_L22N_T3_D20_14" x="-47" y="-61" length="middle"/>
+<pin name="IO_L23P_T3_D19_14" x="-47" y="-64" length="middle"/>
+<pin name="IO_L23N_T3_D18_14" x="-47" y="-67" length="middle"/>
+<pin name="IO_L24P_T3_D17_14" x="-47" y="-70" length="middle"/>
+<pin name="IO_L24N_T3_D16_14" x="-47" y="-73" length="middle"/>
+<pin name="IO_25_14" x="-47" y="-76" length="middle"/>
+<pin name="IO_L18P_T2_D28_14" x="-47" y="-34" length="middle"/>
+<pin name="IO_L18N_T2_D27_14" x="-47" y="-37" length="middle"/>
+<pin name="IO_L19P_T3_D26_14" x="-47" y="-40" length="middle"/>
+<wire x1="-39" y1="74" x2="-42" y2="74" width="0.254" layer="94"/>
+<wire x1="-42" y1="74" x2="-42" y2="-79" width="0.254" layer="94"/>
+<wire x1="-42" y1="-79" x2="-39" y2="-79" width="0.254" layer="94"/>
+<text x="-39" y="76" size="3" layer="97">Bank 14</text>
+<pin name="IO_0_34" x="47" y="71" length="middle" rot="R180"/>
+<pin name="IO_L1P_T0_34" x="47" y="68" length="middle" rot="R180"/>
+<pin name="IO_L1N_T0_34" x="47" y="65" length="middle" rot="R180"/>
+<pin name="IO_L2P_T0_34" x="47" y="62" length="middle" rot="R180"/>
+<pin name="IO_L2N_T0_34" x="47" y="59" length="middle" rot="R180"/>
+<pin name="IO_L3P_T0_DQS_34" x="47" y="56" length="middle" rot="R180"/>
+<pin name="IO_L3N_T0_DQS_34" x="47" y="53" length="middle" rot="R180"/>
+<pin name="IO_L4P_T0_34" x="47" y="50" length="middle" rot="R180"/>
+<pin name="IO_L4N_T0_34" x="47" y="47" length="middle" rot="R180"/>
+<pin name="IO_L5P_T0_34" x="47" y="44" length="middle" rot="R180"/>
+<pin name="IO_L5N_T0_34" x="47" y="41" length="middle" rot="R180"/>
+<pin name="IO_L6P_T0_34" x="47" y="38" length="middle" rot="R180"/>
+<pin name="IO_L6N_T0_VREF_34" x="47" y="35" length="middle" rot="R180"/>
+<pin name="IO_L7P_T1_34" x="47" y="32" length="middle" rot="R180"/>
+<pin name="IO_L7N_T1_34" x="47" y="29" length="middle" rot="R180"/>
+<pin name="IO_L8P_T1_34" x="47" y="26" length="middle" rot="R180"/>
+<pin name="IO_L8N_T1_34" x="47" y="23" length="middle" rot="R180"/>
+<pin name="IO_L9P_T1_DQS_34" x="47" y="20" length="middle" rot="R180"/>
+<pin name="IO_L9N_T1_DQS_34" x="47" y="17" length="middle" rot="R180"/>
+<pin name="IO_L10P_T1_34" x="47" y="14" length="middle" rot="R180"/>
+<pin name="IO_L10N_T1_34" x="47" y="11" length="middle" rot="R180"/>
+<pin name="IO_L11P_T1_SRCC_34" x="47" y="8" length="middle" rot="R180"/>
+<pin name="IO_L11N_T1_SRCC_34" x="47" y="5" length="middle" rot="R180"/>
+<pin name="IO_L12P_T1_MRCC_34" x="47" y="2" length="middle" rot="R180"/>
+<pin name="IO_L12N_T1_MRCC_34" x="47" y="-1" length="middle" rot="R180"/>
+<pin name="IO_L13P_T2_MRCC_34" x="47" y="-4" length="middle" rot="R180"/>
+<pin name="IO_L13N_T2_MRCC_34" x="47" y="-7" length="middle" rot="R180"/>
+<pin name="IO_L14P_T2_SRCC_34" x="47" y="-10" length="middle" rot="R180"/>
+<pin name="IO_L14N_T2_SRCC_34" x="47" y="-13" length="middle" rot="R180"/>
+<pin name="IO_L15P_T2_DQS_34" x="47" y="-16" length="middle" rot="R180"/>
+<pin name="IO_L15N_T2_DQS_34" x="47" y="-19" length="middle" rot="R180"/>
+<pin name="IO_L16P_T2_34" x="47" y="-22" length="middle" rot="R180"/>
+<pin name="IO_L16N_T2_34" x="47" y="-25" length="middle" rot="R180"/>
+<pin name="IO_L17P_T2_34" x="47" y="-28" length="middle" rot="R180"/>
+<pin name="IO_L17N_T2_34" x="47" y="-31" length="middle" rot="R180"/>
+<pin name="IO_L18P_T2_34" x="47" y="-34" length="middle" rot="R180"/>
+<pin name="IO_L18N_T2_34" x="47" y="-37" length="middle" rot="R180"/>
+<pin name="IO_L19P_T3_34" x="47" y="-40" length="middle" rot="R180"/>
+<pin name="IO_L19N_T3_VREF_34" x="47" y="-43" length="middle" rot="R180"/>
+<pin name="IO_L20P_T3_34" x="47" y="-46" length="middle" rot="R180"/>
+<pin name="IO_L20N_T3_34" x="47" y="-49" length="middle" rot="R180"/>
+<pin name="IO_L21P_T3_DQS_34" x="47" y="-52" length="middle" rot="R180"/>
+<pin name="IO_L21N_T3_DQS_34" x="47" y="-55" length="middle" rot="R180"/>
+<pin name="IO_L22P_T3_34" x="47" y="-58" length="middle" rot="R180"/>
+<pin name="IO_L22N_T3_34" x="47" y="-61" length="middle" rot="R180"/>
+<pin name="IO_L23P_T3_34" x="47" y="-64" length="middle" rot="R180"/>
+<pin name="IO_L23N_T3_34" x="47" y="-67" length="middle" rot="R180"/>
+<pin name="IO_L24P_T3_34" x="47" y="-70" length="middle" rot="R180"/>
+<pin name="IO_L24N_T3_34" x="47" y="-73" length="middle" rot="R180"/>
+<pin name="IO_25_34" x="47" y="-76" length="middle" rot="R180"/>
+<text x="47" y="78" size="3" layer="97" rot="R180">Bank 34</text>
+<wire x1="39" y1="73" x2="42" y2="73" width="0.254" layer="94"/>
+<wire x1="42" y1="73" x2="42" y2="-78" width="0.254" layer="94"/>
+<wire x1="42" y1="-78" x2="39" y2="-78" width="0.254" layer="94"/>
+<pin name="DONE_0" x="-17" y="107" length="middle" rot="R270"/>
+<pin name="TCK_0" x="-14" y="107" length="middle" rot="R270"/>
+<pin name="CCLK_0" x="-11" y="107" length="middle" rot="R270"/>
+<pin name="M0_0" x="-8" y="107" length="middle" rot="R270"/>
+<pin name="M1_0" x="-5" y="107" length="middle" rot="R270"/>
+<pin name="INIT_B_0" x="-2" y="107" length="middle" rot="R270"/>
+<pin name="TDI_0" x="1" y="107" length="middle" rot="R270"/>
+<pin name="TDO_0" x="4" y="107" length="middle" rot="R270"/>
+<pin name="M2_0" x="7" y="107" length="middle" rot="R270"/>
+<pin name="CFGBVS_0" x="10" y="107" length="middle" rot="R270"/>
+<pin name="PROGRAM_B_0" x="13" y="107" length="middle" rot="R270"/>
+<pin name="TMS_0" x="16" y="107" length="middle" rot="R270"/>
+<pin name="DXP_0" x="19" y="107" length="middle" rot="R270"/>
+<pin name="DXN_0" x="22" y="107" length="middle" rot="R270"/>
+<text x="-5" y="81" size="3" layer="97">Config</text>
+<pin name="VCCAUX" x="-13" y="-94" length="middle" rot="R90"/>
+<pin name="VCCBRAM" x="5" y="-94" length="middle" rot="R90"/>
+<pin name="VCCINT" x="-10" y="-94" length="middle" rot="R90"/>
+<pin name="GND" x="-7" y="-94" length="middle" rot="R90"/>
+<pin name="VCCO_0" x="-4" y="-94" length="middle" rot="R90"/>
+<pin name="VCCO_14" x="-1" y="-94" length="middle" rot="R90"/>
+<pin name="VCCO_34" x="2" y="-94" length="middle" rot="R90"/>
+<wire x1="-16" y1="-86" x2="-16" y2="-89" width="0.254" layer="94"/>
+<wire x1="-16" y1="-89" x2="8" y2="-89" width="0.254" layer="94"/>
+<wire x1="8" y1="-89" x2="8" y2="-86" width="0.254" layer="94"/>
+<text x="-11" y="-75" size="3" layer="97">POWER</text>
+<text x="0" y="0" size="3" layer="95" align="bottom-center">&gt;NAME</text>
+<wire x1="-20" y1="102" x2="-20" y2="99" width="0.254" layer="94"/>
+<wire x1="-20" y1="102" x2="26" y2="102" width="0.254" layer="94"/>
+<wire x1="26" y1="102" x2="26" y2="99" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -872,7 +875,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="SPARTAN7-LX15">
+<deviceset name="SPARTAN7-LX15" prefix="U">
 <gates>
 <gate name="G$1" symbol="SPARTAN7_15" x="-7.62" y="48.26"/>
 </gates>

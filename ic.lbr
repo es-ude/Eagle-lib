@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.2">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -785,6 +785,29 @@
 <wire x1="-4.5" y1="-4.5" x2="-4.5" y2="4.5" width="0.127" layer="21"/>
 <circle x="-5" y="5" radius="0.25" width="0.127" layer="21"/>
 </package>
+<package name="WDFN8">
+<smd name="1" x="-3" y="1.905" dx="0.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="2" x="-3" y="0.635" dx="0.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="3" x="-3" y="-0.635" dx="0.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="4" x="-3" y="-1.905" dx="0.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="5" x="3" y="-1.905" dx="0.5" dy="1.5" layer="1" rot="R270"/>
+<smd name="6" x="3" y="-0.635" dx="0.5" dy="1.5" layer="1" rot="R270"/>
+<smd name="7" x="3" y="0.635" dx="0.5" dy="1.5" layer="1" rot="R270"/>
+<smd name="8" x="3" y="1.905" dx="0.5" dy="1.5" layer="1" rot="R270"/>
+<wire x1="-3" y1="2.5" x2="3" y2="2.5" width="0.127" layer="21"/>
+<wire x1="3" y1="2.5" x2="3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="2.5" x2="-3" y2="2.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="1.5" x2="-3" y2="1" width="0.127" layer="21"/>
+<wire x1="-3" y1="0.25" x2="-3" y2="-0.25" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1" x2="-3" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.25" x2="-3" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-3" y1="-2.75" x2="3" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.75" x2="3" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.5" x2="3" y2="-1" width="0.127" layer="21"/>
+<wire x1="3" y1="-0.25" x2="3" y2="0.25" width="0.127" layer="21"/>
+<wire x1="3" y1="1" x2="3" y2="1.5" width="0.127" layer="21"/>
+<circle x="-3.5" y="2.75" radius="0.25" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATTINY1634-SU">
@@ -1225,6 +1248,74 @@
 <text x="-10" y="17" size="5.08" layer="25">NAME</text>
 <text x="0" y="55.88" size="5.08" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
+<symbol name="AT90USB128">
+<pin name="(INT.6/AIN.0)PE6" x="-52" y="26" length="middle"/>
+<pin name="(INT.7/AIN.1/UVCON)PE7" x="-52" y="23" length="middle"/>
+<pin name="UVCC" x="-52" y="20" length="middle"/>
+<pin name="D-" x="-52" y="17" length="middle"/>
+<pin name="D+" x="-52" y="14" length="middle"/>
+<pin name="UGND" x="-52" y="11" length="middle"/>
+<pin name="UCAP" x="-52" y="8" length="middle"/>
+<pin name="VBUS" x="-52" y="5" length="middle"/>
+<pin name="(IUID)PE3" x="-52" y="2" length="middle"/>
+<pin name="(SS/PCINT0)PB0" x="-52" y="-1" length="middle"/>
+<pin name="(PCINT1/SCLK)PB1" x="-52" y="-4" length="middle"/>
+<pin name="(PDI/PCINT2/MOSI)PB2" x="-52" y="-7" length="middle"/>
+<pin name="(PDO/PCINT3/MISO)PB3" x="-52" y="-10" length="middle"/>
+<pin name="(PCINT4/OC.2A)PB4" x="-52" y="-13" length="middle"/>
+<pin name="(PCINT5/OC.1A)PB5" x="-52" y="-16" length="middle"/>
+<pin name="(PCINT6/OC.1B)PB6" x="-52" y="-19" length="middle"/>
+<pin name="(PCINT7/OC.0A/OC.1C)PB7" x="-15" y="-47.08" length="middle" rot="R90"/>
+<pin name="(INT4/TOSC1)PE4" x="-12" y="-47.08" length="middle" rot="R90"/>
+<pin name="(INT.5/TOSC2)PE5" x="-9" y="-47.08" length="middle" rot="R90"/>
+<pin name="_RESET" x="-6" y="-47.08" length="middle" rot="R90"/>
+<pin name="XTAL2" x="3" y="-47.08" length="middle" rot="R90"/>
+<pin name="(TXD1/INT3)PD3" x="18" y="-47.08" length="middle" rot="R90"/>
+<pin name="XTAL1" x="6" y="-47.08" length="middle" rot="R90"/>
+<pin name="(OC0B/SCL/INT0)PD0" x="9" y="-47.08" length="middle" rot="R90"/>
+<pin name="(RXD1/INT2)PD2" x="15" y="-47.08" length="middle" rot="R90"/>
+<pin name="(OC2B/SDA/INT1)PD1" x="12" y="-47.08" length="middle" rot="R90"/>
+<pin name="(ICP1)PD4" x="21" y="-47.08" length="middle" rot="R90"/>
+<pin name="(XCK1)PD5" x="24" y="-47.08" length="middle" rot="R90"/>
+<pin name="(T1)PD6" x="27" y="-47.08" length="middle" rot="R90"/>
+<pin name="(T0)PD7" x="30" y="-47.08" length="middle" rot="R90"/>
+<pin name="PE0(_WR)" x="53" y="-19" length="middle" rot="R180"/>
+<pin name="PE1(_RD)" x="53" y="-16" length="middle" rot="R180"/>
+<pin name="PC0(A8)" x="53" y="-13" length="middle" rot="R180"/>
+<pin name="PC1(A9)" x="53" y="-10" length="middle" rot="R180"/>
+<pin name="PC2(A10)" x="53" y="-7" length="middle" rot="R180"/>
+<pin name="PC3(A11/T.3)" x="53" y="-4" length="middle" rot="R180"/>
+<pin name="PC4(A12/OC.3C)" x="53" y="-1" length="middle" rot="R180"/>
+<pin name="PC5(A13/OC.3B)" x="53" y="2" length="middle" rot="R180"/>
+<pin name="PC6(A14/OC.3A)" x="53" y="5" length="middle" rot="R180"/>
+<pin name="PC7(A15/IC.3/CLKO)" x="53" y="8" length="middle" rot="R180"/>
+<pin name="PE2(ALE/_HWB)" x="53" y="11" length="middle" rot="R180"/>
+<pin name="PA7(AD7)" x="53" y="14" length="middle" rot="R180"/>
+<pin name="PA6(AD6)" x="53" y="17" length="middle" rot="R180"/>
+<pin name="PA5(AD5)" x="53" y="20" length="middle" rot="R180"/>
+<pin name="PA4(AD4)" x="53" y="23" length="middle" rot="R180"/>
+<pin name="PA3(AD3)" x="53" y="26" length="middle" rot="R180"/>
+<pin name="PA2(AD2)" x="30" y="48.16" length="middle" rot="R270"/>
+<pin name="PA1(AD1)" x="27" y="48.16" length="middle" rot="R270"/>
+<pin name="PA0(AD0)" x="24" y="48.16" length="middle" rot="R270"/>
+<pin name="VCC" x="21" y="48.16" length="middle" rot="R270"/>
+<pin name="PF7(ADC7/TDI)" x="15" y="48.16" length="middle" rot="R270"/>
+<pin name="PF6(ADC6/TDO)" x="12" y="48.16" length="middle" rot="R270"/>
+<pin name="PF5(ADC5/TMS)" x="9" y="48.16" length="middle" rot="R270"/>
+<pin name="PF4(ADC4/TCK)" x="6" y="48.16" length="middle" rot="R270"/>
+<pin name="PF3(ADC3)" x="3" y="48.16" length="middle" rot="R270"/>
+<pin name="PF2(ADC2)" x="0" y="48.16" length="middle" rot="R270"/>
+<pin name="PF1(ADC1)" x="-3" y="48.16" length="middle" rot="R270"/>
+<pin name="PF0(ADC0)" x="-6" y="48.16" length="middle" rot="R270"/>
+<pin name="AREF" x="-9" y="48.16" length="middle" rot="R270"/>
+<pin name="GND" x="-12" y="48.16" length="middle" rot="R270"/>
+<pin name="AVCC" x="-15" y="48.16" length="middle" rot="R270"/>
+<wire x1="-47" y1="43.16" x2="-47" y2="-42.08" width="0.254" layer="94"/>
+<wire x1="-47" y1="-42.08" x2="48" y2="-42.08" width="0.254" layer="94"/>
+<wire x1="48" y1="-42.08" x2="48" y2="43.16" width="0.254" layer="94"/>
+<wire x1="48" y1="43.16" x2="-47" y2="43.16" width="0.254" layer="94"/>
+<text x="0" y="0" size="3.81" layer="94" font="vector" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ATTINY1634-SU" prefix="U" uservalue="yes">
@@ -1539,7 +1630,22 @@
 <gate name="G$1" symbol="FLASH_SPI" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC8">
+<device name="SOIC" package="SOIC8">
+<connects>
+<connect gate="G$1" pin="CE" pad="1"/>
+<connect gate="G$1" pin="HOLD" pad="7"/>
+<connect gate="G$1" pin="SCK" pad="6"/>
+<connect gate="G$1" pin="SI" pad="5"/>
+<connect gate="G$1" pin="SO" pad="2"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="WP" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="WDFN" package="WDFN8">
 <connects>
 <connect gate="G$1" pin="CE" pad="1"/>
 <connect gate="G$1" pin="HOLD" pad="7"/>
@@ -1863,6 +1969,81 @@
 <connect gate="G$1" pin="XTAL1" pad="J5"/>
 <connect gate="G$1" pin="XTAL2" pad="I5"/>
 <connect gate="G$1" pin="_RESET" pad="H3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AT90USB128" prefix="U">
+<gates>
+<gate name="G$1" symbol="AT90USB128" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="QFN64">
+<connects>
+<connect gate="G$1" pin="(ICP1)PD4" pad="29"/>
+<connect gate="G$1" pin="(INT.5/TOSC2)PE5" pad="19"/>
+<connect gate="G$1" pin="(INT.6/AIN.0)PE6" pad="1"/>
+<connect gate="G$1" pin="(INT.7/AIN.1/UVCON)PE7" pad="2"/>
+<connect gate="G$1" pin="(INT4/TOSC1)PE4" pad="18"/>
+<connect gate="G$1" pin="(IUID)PE3" pad="9"/>
+<connect gate="G$1" pin="(OC0B/SCL/INT0)PD0" pad="25"/>
+<connect gate="G$1" pin="(OC2B/SDA/INT1)PD1" pad="26"/>
+<connect gate="G$1" pin="(PCINT1/SCLK)PB1" pad="11"/>
+<connect gate="G$1" pin="(PCINT4/OC.2A)PB4" pad="14"/>
+<connect gate="G$1" pin="(PCINT5/OC.1A)PB5" pad="15"/>
+<connect gate="G$1" pin="(PCINT6/OC.1B)PB6" pad="16"/>
+<connect gate="G$1" pin="(PCINT7/OC.0A/OC.1C)PB7" pad="17"/>
+<connect gate="G$1" pin="(PDI/PCINT2/MOSI)PB2" pad="12"/>
+<connect gate="G$1" pin="(PDO/PCINT3/MISO)PB3" pad="13"/>
+<connect gate="G$1" pin="(RXD1/INT2)PD2" pad="27"/>
+<connect gate="G$1" pin="(SS/PCINT0)PB0" pad="10"/>
+<connect gate="G$1" pin="(T0)PD7" pad="32"/>
+<connect gate="G$1" pin="(T1)PD6" pad="31"/>
+<connect gate="G$1" pin="(TXD1/INT3)PD3" pad="28"/>
+<connect gate="G$1" pin="(XCK1)PD5" pad="30"/>
+<connect gate="G$1" pin="AREF" pad="62"/>
+<connect gate="G$1" pin="AVCC" pad="64"/>
+<connect gate="G$1" pin="D+" pad="5"/>
+<connect gate="G$1" pin="D-" pad="4"/>
+<connect gate="G$1" pin="GND" pad="22 63 PAD VIA1 VIA2 VIA3 VIA4 VIA5 VIA6 VIA7 VIA8 VIA9"/>
+<connect gate="G$1" pin="PA0(AD0)" pad="51"/>
+<connect gate="G$1" pin="PA1(AD1)" pad="50"/>
+<connect gate="G$1" pin="PA2(AD2)" pad="49"/>
+<connect gate="G$1" pin="PA3(AD3)" pad="48"/>
+<connect gate="G$1" pin="PA4(AD4)" pad="47"/>
+<connect gate="G$1" pin="PA5(AD5)" pad="46"/>
+<connect gate="G$1" pin="PA6(AD6)" pad="45"/>
+<connect gate="G$1" pin="PA7(AD7)" pad="44"/>
+<connect gate="G$1" pin="PC0(A8)" pad="35"/>
+<connect gate="G$1" pin="PC1(A9)" pad="36"/>
+<connect gate="G$1" pin="PC2(A10)" pad="37"/>
+<connect gate="G$1" pin="PC3(A11/T.3)" pad="38"/>
+<connect gate="G$1" pin="PC4(A12/OC.3C)" pad="39"/>
+<connect gate="G$1" pin="PC5(A13/OC.3B)" pad="40"/>
+<connect gate="G$1" pin="PC6(A14/OC.3A)" pad="41"/>
+<connect gate="G$1" pin="PC7(A15/IC.3/CLKO)" pad="42"/>
+<connect gate="G$1" pin="PE0(_WR)" pad="33"/>
+<connect gate="G$1" pin="PE1(_RD)" pad="34"/>
+<connect gate="G$1" pin="PE2(ALE/_HWB)" pad="43"/>
+<connect gate="G$1" pin="PF0(ADC0)" pad="61"/>
+<connect gate="G$1" pin="PF1(ADC1)" pad="60"/>
+<connect gate="G$1" pin="PF2(ADC2)" pad="59"/>
+<connect gate="G$1" pin="PF3(ADC3)" pad="58"/>
+<connect gate="G$1" pin="PF4(ADC4/TCK)" pad="57"/>
+<connect gate="G$1" pin="PF5(ADC5/TMS)" pad="56"/>
+<connect gate="G$1" pin="PF6(ADC6/TDO)" pad="55"/>
+<connect gate="G$1" pin="PF7(ADC7/TDI)" pad="54"/>
+<connect gate="G$1" pin="UCAP" pad="7"/>
+<connect gate="G$1" pin="UGND" pad="6"/>
+<connect gate="G$1" pin="UVCC" pad="3 21"/>
+<connect gate="G$1" pin="VBUS" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="52 53"/>
+<connect gate="G$1" pin="XTAL1" pad="24"/>
+<connect gate="G$1" pin="XTAL2" pad="23"/>
+<connect gate="G$1" pin="_RESET" pad="20"/>
 </connects>
 <technologies>
 <technology name=""/>
