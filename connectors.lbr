@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.3.0">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -526,9 +526,15 @@
 <smd name="3" x="1.75" y="-6.3" dx="2" dy="1" layer="1"/>
 <smd name="4" x="1.75" y="-4.55" dx="2" dy="1" layer="1"/>
 <text x="0" y="-3.475" size="0.6" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<dimension x1="-3.8" y1="2.5" x2="-3.8" y2="-3.5" x3="-8.39269375" y3="-0.5" textsize="1.27" layer="47"/>
 <hole x="-5.08" y="0" drill="1.7018"/>
 <hole x="5.08" y="0" drill="1.7018"/>
+<wire x1="-9.5" y1="9.5" x2="9.5" y2="9.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="9.5" y1="-9.5" x2="9.5" y2="9.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-9.5" y1="-9.5" x2="-9.5" y2="9.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-9.5" y1="-9.5" x2="9.5" y2="-9.5" width="0.127" layer="21" style="shortdash"/>
+<text x="-6.1" y="-6.8" size="1.016" layer="21">GND</text>
+<rectangle x1="-0.6" y1="-6.4" x2="0.6" y2="-5.7" layer="21"/>
+<circle x="-3.429" y="-4.064" radius="0.2" width="0.1524" layer="21"/>
 </package>
 <package name="3535_LED">
 <wire x1="-1.75" y1="1.75" x2="1.75" y2="1.75" width="0.127" layer="21"/>
@@ -559,9 +565,15 @@
 <smd name="3" x="-1.75" y="-4.45" dx="2" dy="1" layer="1" rot="R180"/>
 <smd name="4" x="-1.75" y="-6.2" dx="2" dy="1" layer="1" rot="R180"/>
 <text x="0" y="-7.275" size="0.6" layer="25" font="vector" rot="R180" align="bottom-center">&gt;NAME</text>
-<dimension x1="-3.75" y1="2.5" x2="-3.75" y2="-3.5" x3="-9.25" y3="-0.5" textsize="1.27" layer="47"/>
 <hole x="-5.08" y="0" drill="1.7018"/>
 <hole x="5.08" y="0" drill="1.7018"/>
+<wire x1="-9.5" y1="9.5" x2="9.5" y2="9.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="9.5" y1="-9.5" x2="9.5" y2="9.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-9.5" y1="-9.5" x2="-9.5" y2="9.5" width="0.127" layer="21" style="shortdash"/>
+<wire x1="-9.5" y1="-9.5" x2="9.5" y2="-9.5" width="0.127" layer="21" style="shortdash"/>
+<circle x="3.571" y="-6.564" radius="0.2" width="0.1524" layer="21"/>
+<text x="3.607" y="-4.872" size="1.016" layer="21">GND</text>
+<rectangle x1="-0.6" y1="-5" x2="0.6" y2="-4.2" layer="21"/>
 </package>
 <package name="DF40">
 <smd name="1" x="0" y="-1.375" dx="0.2" dy="1.25" layer="1"/>
@@ -834,6 +846,8 @@ Created by Robert Siegler</description>
 <wire x1="3.6" y1="-1.75" x2="-3.6" y2="-1.75" width="0.2" layer="21"/>
 <wire x1="-3.6" y1="-1.75" x2="-3.6" y2="1.75" width="0.2" layer="21"/>
 <circle x="-2.54" y="3.81" radius="0.127" width="0.1524" layer="21"/>
+<hole x="-1.5" y="0" drill="0.88"/>
+<hole x="1.5" y="0" drill="0.88"/>
 </package>
 <package name="SPST_4PIN_SMT">
 <smd name="3" x="4" y="2.25" dx="1.4" dy="1.6" layer="1"/>
@@ -1867,7 +1881,7 @@ Created by Robert Siegler</description>
 </deviceset>
 <deviceset name="CHERRY_MX_RGB_ADD" prefix="S" uservalue="yes">
 <gates>
-<gate name="G$1" symbol="CHERRY_MX_RGB_ADD" x="0" y="2.54"/>
+<gate name="G$1" symbol="CHERRY_MX_RGB_ADD" x="0" y="0"/>
 </gates>
 <devices>
 <device name="NORMAL" package="MX_CHERRY_RGB">
