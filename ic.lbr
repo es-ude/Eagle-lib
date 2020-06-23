@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1671,6 +1671,64 @@
 <wire x1="70" y1="70" x2="-70" y2="70" width="0.254" layer="94"/>
 <text x="-5.08" y="7.62" size="2.54" layer="95">&gt;NAME</text>
 <text x="-5.08" y="-12.7" size="2.54" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="MT41K128M16">
+<pin name="A14" x="-27.94" y="27.94" length="middle"/>
+<pin name="A13" x="-27.94" y="25.4" length="middle"/>
+<pin name="A12" x="-27.94" y="22.86" length="middle"/>
+<pin name="A11" x="-27.94" y="20.32" length="middle"/>
+<pin name="A10" x="-27.94" y="17.78" length="middle"/>
+<pin name="A9" x="-27.94" y="15.24" length="middle"/>
+<pin name="A8" x="-27.94" y="12.7" length="middle"/>
+<pin name="A7" x="-27.94" y="10.16" length="middle"/>
+<pin name="A6" x="-27.94" y="7.62" length="middle"/>
+<pin name="A5" x="-27.94" y="5.08" length="middle"/>
+<pin name="A4" x="-27.94" y="2.54" length="middle"/>
+<pin name="A3" x="-27.94" y="0" length="middle"/>
+<pin name="A2" x="-27.94" y="-2.54" length="middle"/>
+<pin name="A1" x="-27.94" y="-5.08" length="middle"/>
+<pin name="A0" x="-27.94" y="-7.62" length="middle"/>
+<pin name="BA0" x="-27.94" y="-15.24" length="middle"/>
+<pin name="BA1" x="-27.94" y="-17.78" length="middle"/>
+<pin name="BA2" x="-27.94" y="-20.32" length="middle"/>
+<pin name="CK" x="-27.94" y="-25.4" length="middle"/>
+<pin name="CK#" x="-27.94" y="-27.94" length="middle"/>
+<pin name="CKE" x="-27.94" y="-30.48" length="middle"/>
+<pin name="CS#" x="-27.94" y="-35.56" length="middle"/>
+<pin name="RAS#" x="-27.94" y="-38.1" length="middle"/>
+<pin name="CAS#" x="-27.94" y="-40.64" length="middle"/>
+<pin name="WE#" x="-27.94" y="-43.18" length="middle"/>
+<pin name="VREF_DQ" x="-10.16" y="35.56" length="middle" rot="R270"/>
+<pin name="VREF_CA" x="-7.62" y="35.56" length="middle" rot="R270"/>
+<pin name="DQ15" x="27.94" y="27.94" length="middle" rot="R180"/>
+<pin name="DQ14" x="27.94" y="25.4" length="middle" rot="R180"/>
+<pin name="DQ13" x="27.94" y="22.86" length="middle" rot="R180"/>
+<pin name="DQ12" x="27.94" y="20.32" length="middle" rot="R180"/>
+<pin name="DQ11" x="27.94" y="17.78" length="middle" rot="R180"/>
+<pin name="DQ10" x="27.94" y="15.24" length="middle" rot="R180"/>
+<pin name="DQ9" x="27.94" y="12.7" length="middle" rot="R180"/>
+<pin name="DQ8" x="27.94" y="10.16" length="middle" rot="R180"/>
+<pin name="DQ7" x="27.94" y="7.62" length="middle" rot="R180"/>
+<pin name="DQ6" x="27.94" y="5.08" length="middle" rot="R180"/>
+<pin name="DQ5" x="27.94" y="2.54" length="middle" rot="R180"/>
+<pin name="DQ4" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="DQ3" x="27.94" y="-2.54" length="middle" rot="R180"/>
+<pin name="DQ2" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="DQ1" x="27.94" y="-7.62" length="middle" rot="R180"/>
+<pin name="DQ0" x="27.94" y="-10.16" length="middle" rot="R180"/>
+<pin name="P$1" x="27.94" y="-15.24" length="middle" rot="R180"/>
+<pin name="P$2" x="27.94" y="-17.78" length="middle" rot="R180"/>
+<pin name="P$3" x="27.94" y="-20.32" length="middle" rot="R180"/>
+<pin name="P$4" x="27.94" y="-22.86" length="middle" rot="R180"/>
+<pin name="P$5" x="27.94" y="-27.94" length="middle" rot="R180"/>
+<pin name="P$6" x="27.94" y="-30.48" length="middle" rot="R180"/>
+<pin name="P$7" x="27.94" y="-35.56" length="middle" rot="R180"/>
+<pin name="P$8" x="27.94" y="-40.64" length="middle" rot="R180"/>
+<pin name="P$9" x="27.94" y="-43.18" length="middle" rot="R180"/>
+<pin name="P$10" x="7.62" y="35.56" length="middle" rot="R270"/>
+<pin name="P$11" x="5.08" y="35.56" length="middle" rot="R270"/>
+<pin name="P$12" x="0" y="35.56" length="middle" rot="R270"/>
+<pin name="P$13" x="-2.54" y="35.56" length="middle" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
