@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1237,6 +1237,25 @@ Created by Robert Siegler</description>
 <wire x1="-2.7" y1="0.6" x2="-2.7" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="2.7" y1="0.6" x2="2.7" y2="-0.6" width="0.127" layer="21"/>
 </package>
+<package name="SPST_DPI4_SMT_SMALL" urn="urn:adsk.eagle:footprint:27823760/1">
+<description>218-4LPSTJRF</description>
+<smd name="2" x="-0.635" y="2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<smd name="3" x="0.635" y="2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<smd name="4" x="1.905" y="2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<smd name="1" x="-1.905" y="2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<smd name="7" x="-0.635" y="-2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<smd name="6" x="0.635" y="-2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<smd name="5" x="1.905" y="-2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<smd name="8" x="-1.905" y="-2.05" dx="1.27" dy="0.45" layer="1" rot="R90"/>
+<wire x1="-3.1" y1="-2.9" x2="-3.1" y2="2.9" width="0.127" layer="21"/>
+<wire x1="-3.1" y1="2.9" x2="3.1" y2="2.9" width="0.127" layer="21"/>
+<wire x1="3.1" y1="2.9" x2="3.1" y2="-2.9" width="0.127" layer="21"/>
+<wire x1="3.1" y1="-2.9" x2="-3.1" y2="-2.9" width="0.127" layer="21"/>
+<wire x1="-0.2" y1="-0.5" x2="-0.2" y2="0.5" width="0.127" layer="21"/>
+<wire x1="0.2" y1="-0.5" x2="0.2" y2="0.5" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="0.1" x2="0" y2="0.9" width="0.127" layer="21"/>
+<wire x1="0" y1="0.9" x2="0.8" y2="0.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SPC4078" urn="urn:adsk.eagle:package:7494/1" type="box">
@@ -1273,15 +1292,21 @@ Created by Robert Siegler</description>
 <packageinstance name="TACTILE-SWITCH"/>
 </packageinstances>
 </package3d>
+<package3d name="SPST_DPI4_SMT_SMALL" urn="urn:adsk.eagle:package:27823757/2" type="box">
+<description>218-4LPSTJRF</description>
+<packageinstances>
+<packageinstance name="SPST_DPI4_SMT_SMALL"/>
+</packageinstances>
+</package3d>
 </packages3d>
 <symbols>
 <symbol name="HEADER_2">
-<pin name="2" x="-8" y="-3" length="middle"/>
-<pin name="1" x="-8" y="3" length="middle"/>
-<wire x1="-3" y1="6" x2="-3" y2="-6" width="0.254" layer="94"/>
-<wire x1="-3" y1="-6" x2="3" y2="-6" width="0.254" layer="94"/>
-<wire x1="3" y1="-6" x2="3" y2="6" width="0.254" layer="94"/>
-<wire x1="3" y1="6" x2="-3" y2="6" width="0.254" layer="94"/>
+<pin name="2" x="-7.62" y="-2.54" length="middle"/>
+<pin name="1" x="-7.62" y="2.54" length="middle"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
 <text x="0" y="7" size="1.4224" layer="95" align="bottom-center">&gt;NAME</text>
 </symbol>
 <symbol name="HEADER_3">
@@ -1493,37 +1518,39 @@ Created by Robert Siegler</description>
 <pin name="20" x="10.16" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 <symbol name="DIP_4">
-<pin name="1X" x="-14" y="9" length="middle"/>
-<pin name="2X" x="-14" y="3" length="middle"/>
-<pin name="3X" x="-14" y="-3" length="middle"/>
-<pin name="3Y" x="14" y="-3" length="middle" rot="R180"/>
-<pin name="2Y" x="14" y="3" length="middle" rot="R180"/>
-<pin name="1Y" x="14" y="9" length="middle" rot="R180"/>
-<wire x1="-9" y1="12" x2="-9" y2="9" width="0.254" layer="94"/>
-<wire x1="-9" y1="9" x2="-9" y2="3" width="0.254" layer="94"/>
-<wire x1="-9" y1="3" x2="-9" y2="-3" width="0.254" layer="94"/>
-<wire x1="-9" y1="-3" x2="-9" y2="-12" width="0.254" layer="94"/>
-<wire x1="-9" y1="-12" x2="9" y2="-12" width="0.254" layer="94"/>
-<wire x1="9" y1="-12" x2="9" y2="-3" width="0.254" layer="94"/>
-<wire x1="9" y1="-3" x2="9" y2="3" width="0.254" layer="94"/>
-<wire x1="9" y1="3" x2="9" y2="9" width="0.254" layer="94"/>
-<wire x1="9" y1="9" x2="9" y2="12" width="0.254" layer="94"/>
-<wire x1="9" y1="12" x2="-9" y2="12" width="0.254" layer="94"/>
-<wire x1="-9" y1="3" x2="-2" y2="3" width="0.254" layer="94"/>
-<wire x1="-2" y1="3" x2="1" y2="5" width="0.254" layer="94"/>
-<wire x1="9" y1="3" x2="2" y2="3" width="0.254" layer="94"/>
-<wire x1="9" y1="9" x2="2" y2="9" width="0.254" layer="94"/>
-<wire x1="9" y1="-3" x2="2" y2="-3" width="0.254" layer="94"/>
-<wire x1="-9" y1="-3" x2="-2" y2="-3" width="0.254" layer="94"/>
-<wire x1="-2" y1="-3" x2="1" y2="-1" width="0.254" layer="94"/>
-<wire x1="-9" y1="9" x2="-2" y2="9" width="0.254" layer="94"/>
-<wire x1="-2" y1="9" x2="1" y2="11" width="0.254" layer="94"/>
-<pin name="4X" x="-14" y="-9" length="middle"/>
-<pin name="4Y" x="14" y="-9" length="middle" rot="R180"/>
-<wire x1="9" y1="-9" x2="2" y2="-9" width="0.254" layer="94"/>
-<wire x1="-9" y1="-9" x2="-2" y2="-9" width="0.254" layer="94"/>
-<wire x1="-2" y1="-9" x2="1" y2="-7" width="0.254" layer="94"/>
+<pin name="1X" x="-12.7" y="7.62" length="middle"/>
+<pin name="2X" x="-12.7" y="2.54" length="middle"/>
+<pin name="3X" x="-12.7" y="-2.54" length="middle"/>
+<pin name="3Y" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="2Y" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="1Y" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="4X" x="-12.7" y="-7.62" length="middle"/>
+<pin name="4Y" x="12.7" y="-7.62" length="middle" rot="R180"/>
 <text x="0" y="12.7" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="7.62" y2="2.54" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 <symbol name="LED_HEADER">
 <pin name="DATA" x="-10.54" y="0" length="middle"/>
@@ -1779,26 +1806,26 @@ Created by Robert Siegler</description>
 <wire x1="-7.62" y1="-38.1" x2="-7.62" y2="38.1" width="0.254" layer="94"/>
 <text x="-7.62" y="38.735" size="1.778" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="GND" x="-12.7" y="-33.02" length="middle" direction="pwr"/>
-<pin name="SSTXP1" x="-12.7" y="27.94" length="middle" direction="out"/>
-<pin name="SSTXN1" x="-12.7" y="25.4" length="middle" direction="out"/>
-<pin name="VBUS_A" x="-12.7" y="35.56" length="middle" direction="pwr"/>
+<pin name="GND" x="-12.7" y="-33.02" length="middle"/>
+<pin name="SSTXP1" x="-12.7" y="27.94" length="middle"/>
+<pin name="SSTXN1" x="-12.7" y="25.4" length="middle"/>
+<pin name="VBUS_A" x="-12.7" y="35.56" length="middle"/>
 <pin name="CC1" x="-12.7" y="-2.54" length="middle"/>
 <pin name="DP1" x="-12.7" y="-10.16" length="middle"/>
 <pin name="DN1" x="-12.7" y="-12.7" length="middle"/>
 <pin name="SBU1" x="-12.7" y="-25.4" length="middle"/>
-<pin name="SSRXN2" x="-12.7" y="17.78" length="middle" direction="in"/>
-<pin name="SSRXP2" x="-12.7" y="20.32" length="middle" direction="in"/>
-<pin name="SSRXN1" x="-12.7" y="10.16" length="middle" direction="in"/>
-<pin name="SSRXP1" x="-12.7" y="12.7" length="middle" direction="in"/>
-<pin name="VBUS_B" x="-12.7" y="33.02" length="middle" direction="pwr"/>
+<pin name="SSRXN2" x="-12.7" y="17.78" length="middle"/>
+<pin name="SSRXP2" x="-12.7" y="20.32" length="middle"/>
+<pin name="SSRXN1" x="-12.7" y="10.16" length="middle"/>
+<pin name="SSRXP1" x="-12.7" y="12.7" length="middle"/>
+<pin name="VBUS_B" x="-12.7" y="33.02" length="middle"/>
 <pin name="SBU2" x="-12.7" y="-27.94" length="middle"/>
 <pin name="DP2" x="-12.7" y="-17.78" length="middle"/>
 <pin name="DN2" x="-12.7" y="-20.32" length="middle"/>
 <pin name="CC2" x="-12.7" y="-5.08" length="middle"/>
-<pin name="SSTXP2" x="-12.7" y="5.08" length="middle" direction="out"/>
-<pin name="SSTXN2" x="-12.7" y="2.54" length="middle" direction="out"/>
-<pin name="SHIELD" x="-12.7" y="-35.56" length="middle" direction="pwr"/>
+<pin name="SSTXP2" x="-12.7" y="5.08" length="middle"/>
+<pin name="SSTXN2" x="-12.7" y="2.54" length="middle"/>
+<pin name="SHIELD" x="-12.7" y="-35.56" length="middle"/>
 </symbol>
 <symbol name="S2B-PH-SM4-TB">
 <wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.762" layer="94"/>
@@ -2309,6 +2336,24 @@ Created by Robert Siegler</description>
 <connect gate="G$1" pin="4X" pad="4"/>
 <connect gate="G$1" pin="4Y" pad="5"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMALL" package="SPST_DPI4_SMT_SMALL">
+<connects>
+<connect gate="G$1" pin="1X" pad="1"/>
+<connect gate="G$1" pin="1Y" pad="8"/>
+<connect gate="G$1" pin="2X" pad="2"/>
+<connect gate="G$1" pin="2Y" pad="7"/>
+<connect gate="G$1" pin="3X" pad="3"/>
+<connect gate="G$1" pin="3Y" pad="6"/>
+<connect gate="G$1" pin="4X" pad="4"/>
+<connect gate="G$1" pin="4Y" pad="5"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:27823757/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
