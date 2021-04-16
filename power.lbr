@@ -467,7 +467,7 @@
 <text x="0" y="2.3215" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.185" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="SOT95P237X112-3N" urn="urn:adsk.eagle:footprint:27877362/1" locally_modified="yes">
+<package name="SOT-23(3PIN)" urn="urn:adsk.eagle:footprint:27877362/1" locally_modified="yes">
 <wire x1="0.7112" y1="0.5842" x2="0.7112" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-0.2794" y1="-1.524" x2="0.7112" y2="-1.524" width="0.1524" layer="21"/>
 <wire x1="0.7112" y1="-1.524" x2="0.7112" y2="-0.5842" width="0.1524" layer="21"/>
@@ -520,7 +520,7 @@
 </package3d>
 <package3d name="SOT95P237X112-3N" urn="urn:adsk.eagle:package:27877361/2" type="model">
 <packageinstances>
-<packageinstance name="SOT95P237X112-3N"/>
+<packageinstance name="SOT-23(3PIN)"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1406,7 +1406,7 @@ Source: &lt;a href="http://docs-emea.rs-online.com/webdocs/13e4/0900766b813e4269
 <gate name="A" symbol="REF3012AIDBZR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT95P237X112-3N">
+<device name="" package="SOT-23(3PIN)">
 <connects>
 <connect gate="A" pin="GND" pad="3"/>
 <connect gate="A" pin="IN" pad="1"/>

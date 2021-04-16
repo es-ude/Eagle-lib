@@ -248,7 +248,7 @@
 <text x="0" y="2.9996" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.9996" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-<package name="QFN50P400X400X50-17T260N" urn="urn:adsk.eagle:footprint:27672154/1">
+<package name="UQFN-16(4×4×0.5MM)" urn="urn:adsk.eagle:footprint:27672154/1" locally_modified="yes">
 <description>16-QFN, 0.50 mm pitch, 4.00 X 4.00 X 0.50 mm body, 2.60 X 2.60 mm thermal pad
 &lt;p&gt;16-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 0.50 mm and thermal pad size 2.60 X 2.60 mm&lt;/p&gt;</description>
 <circle x="-2.554" y="1.414" radius="0.25" width="0" layer="21"/>
@@ -297,7 +297,7 @@
 <description>16-QFN, 0.50 mm pitch, 4.00 X 4.00 X 0.50 mm body, 2.60 X 2.60 mm thermal pad
 &lt;p&gt;16-pin QFN package with 0.50 mm pitch with body size 4.00 X 4.00 X 0.50 mm and thermal pad size 2.60 X 2.60 mm&lt;/p&gt;</description>
 <packageinstances>
-<packageinstance name="QFN50P400X400X50-17T260N"/>
+<packageinstance name="UQFN-16(4×4×0.5MM)"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -649,7 +649,7 @@
 <gate name="G$1" symbol="PAC1934" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN50P400X400X50-17T260N">
+<device name="" package="UQFN-16(4×4×0.5MM)">
 <connects>
 <connect gate="G$1" pin="!PWRDN" pad="16"/>
 <connect gate="G$1" pin="ADDRSEL" pad="6"/>
