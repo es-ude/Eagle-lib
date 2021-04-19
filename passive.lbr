@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="20" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -247,8 +247,7 @@
 <wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.12" layer="51"/>
 <smd name="1" x="-0.7506" y="0" dx="0.6107" dy="0.9118" layer="1"/>
 <smd name="2" x="0.7506" y="0" dx="0.6107" dy="0.9118" layer="1"/>
-<text x="0" y="1.4049" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.4049" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="0.8969" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
 <wire x1="-1.25" y1="0.65" x2="1.25" y2="0.65" width="0.15" layer="21"/>
 <wire x1="1.25" y1="0.65" x2="1.25" y2="-0.65" width="0.15" layer="21"/>
 <wire x1="1.25" y1="-0.65" x2="-1.25" y2="-0.65" width="0.15" layer="21"/>
@@ -259,8 +258,7 @@
 &lt;p&gt;Chip package with body size 1.60 X 0.87 X 0.60 mm&lt;/p&gt;</description>
 <smd name="1" x="-0.7" y="0" dx="1.0291" dy="0.9991" layer="1"/>
 <smd name="2" x="0.7" y="0" dx="1.0291" dy="0.9991" layer="1"/>
-<text x="0" y="1.4486" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.4486" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="0.9406" size="0.6096" layer="25" align="bottom-center">&gt;NAME</text>
 <wire x1="-1.4" y1="0.7" x2="1.4" y2="0.7" width="0.127" layer="21"/>
 <wire x1="1.4" y1="0.7" x2="1.4" y2="-0.7" width="0.127" layer="21"/>
 <wire x1="1.4" y1="-0.7" x2="-1.4" y2="-0.7" width="0.127" layer="21"/>
