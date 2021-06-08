@@ -553,6 +553,7 @@
 </devices>
 </deviceset>
 <deviceset name="PAC1720" prefix="U">
+<description>Current &amp; Power Monitors &amp; Regulators Dual I2C/SMBus Current Sensor</description>
 <gates>
 <gate name="G$1" symbol="CURRENT_SENSE_DUAL_DIGITAL" x="0" y="0"/>
 </gates>
@@ -645,6 +646,7 @@
 </devices>
 </deviceset>
 <deviceset name="PAC1934" prefix="U">
+<description>Current &amp; Power Monitors &amp; Regulators Quad High-Side Current Sensor, I2C/SMBus, 32V with Accumulator</description>
 <gates>
 <gate name="G$1" symbol="PAC1934" x="0" y="0"/>
 </gates>
