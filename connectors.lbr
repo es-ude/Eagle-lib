@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -73,13 +73,13 @@
 <library>
 <packages>
 <package name="2X1_HEADER">
-<pad name="3" x="0" y="-1.27" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="1" x="0" y="1.27" drill="1" diameter="1.6764" shape="square" rot="R90"/>
-<wire x1="-1.27" y1="2.54" x2="1.27" y2="2.54" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.54" x2="1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-2.54" x2="-1.27" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="2.54" width="0.127" layer="21"/>
-<text x="-1.75" y="0" size="1.4224" layer="21" rot="R90" align="bottom-center">&gt;NAME</text>
+<pad name="3" x="0" y="1.27" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="1" x="0" y="3.81" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<wire x1="-1.27" y1="5.08" x2="1.27" y2="5.08" width="0.127" layer="21"/>
+<wire x1="1.27" y1="5.08" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="5.08" width="0.127" layer="21"/>
+<text x="-1.75" y="2.54" size="1.4224" layer="21" rot="R90" align="bottom-center">&gt;NAME</text>
 </package>
 <package name="3X1_HEADER">
 <pad name="3" x="0" y="0" drill="1" diameter="1.6764" rot="R90"/>
@@ -1256,8 +1256,21 @@ Created by Robert Siegler</description>
 <wire x1="-0.8" y1="0.1" x2="0" y2="0.9" width="0.127" layer="21"/>
 <wire x1="0" y1="0.9" x2="0.8" y2="0.1" width="0.127" layer="21"/>
 </package>
-<package name="2.5MM_HOLE">
-<pad name="P$1" x="0" y="0" drill="2.5" diameter="3"/>
+<package name="HDR_6X1_2.54MM">
+<pad name="3" x="0" y="-6.35" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="1" x="0" y="-1.27" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-15.24" x2="-1.27" y2="-15.24" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-15.24" x2="-1.27" y2="0" width="0.127" layer="21"/>
+<text x="-1.75" y="-2.54" size="1.4224" layer="21" rot="R90" align="bottom-center">&gt;NAME</text>
+<pad name="2" x="0" y="-3.81" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="4" x="0" y="-8.89" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="5" x="0" y="-11.43" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="6" x="0" y="-13.97" drill="1" diameter="1.6764" rot="R90"/>
+</package>
+<package name="HOLE_PITCH_2.5MM">
+<pad name="P$1" x="0" y="0" drill="2.5" diameter="2.8"/>
 </package>
 </packages>
 <packages3d>
@@ -1882,8 +1895,21 @@ Created by Robert Siegler</description>
 <wire x1="3.81" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 </symbol>
-<symbol name="2.5MM_HOLE">
-<pin name="P" x="0" y="0" length="middle"/>
+<symbol name="HDR_6X1">
+<text x="-1.62" y="7" size="1.778" layer="95" align="bottom-center">&gt;NAME</text>
+<pin name="1" x="-10.16" y="2.54" length="middle"/>
+<pin name="2" x="-10.16" y="0" length="middle"/>
+<pin name="3" x="-10.16" y="-2.54" length="middle"/>
+<pin name="4" x="-10.16" y="-5.08" length="middle"/>
+<pin name="5" x="-10.16" y="-7.62" length="middle"/>
+<pin name="6" x="-10.16" y="-10.16" length="middle"/>
+<wire x1="-5.08" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+</symbol>
+<symbol name="GND_CHASSIS">
+<pin name="P$1" x="0" y="0" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3098,14 +3124,34 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/M50-3142045.p
 </device>
 </devices>
 </deviceset>
-<deviceset name="2.5MM_SPACER">
+<deviceset name="MALE_HDR16X12.54MM">
 <gates>
-<gate name="G$1" symbol="2.5MM_HOLE" x="0" y="0"/>
+<gate name="G$1" symbol="HDR_6X1" x="2.54" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="2.5MM_HOLE">
+<device name="" package="HDR_6X1_2.54MM">
 <connects>
-<connect gate="G$1" pin="P" pad="P$1"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPACER_2.5MM">
+<gates>
+<gate name="G$1" symbol="GND_CHASSIS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HOLE_PITCH_2.5MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>

@@ -247,7 +247,7 @@
 <smd name="P$49" x="0.31" y="-6.55" dx="1.1" dy="1.1" layer="1"/>
 <smd name="P$50" x="0.31" y="-8.05" dx="1.1" dy="1.1" layer="1"/>
 <smd name="P$51" x="0.31" y="-9.55" dx="1.1" dy="1.1" layer="1"/>
-<text x="-9" y="9" size="2.54" layer="25">&gt;NAME</text>
+<text x="-9" y="7.73" size="2.54" layer="25">&gt;NAME</text>
 </package>
 </packages>
 <symbols>
@@ -302,7 +302,7 @@
 <wire x1="20.32" y1="-30.48" x2="20.32" y2="25.4" width="0.254" layer="94"/>
 <wire x1="20.32" y1="25.4" x2="-20.32" y2="25.4" width="0.254" layer="94"/>
 <text x="-16.24" y="29.32" size="1.27" layer="95" align="bottom-center">&gt;NAME</text>
-<text x="-13.7" y="26.78" size="1.27" layer="95" align="bottom-center">ESP-WROOM-32</text>
+<text x="-13.7" y="26.78" size="1.27" layer="95" align="bottom-center">ESP32-S2_WROOM</text>
 <pin name="GND1" x="-27.94" y="22.86"/>
 <pin name="3V3" x="-27.94" y="20.32"/>
 <pin name="IO0" x="-27.94" y="17.78"/>
