@@ -1194,26 +1194,26 @@ Created by Robert Siegler</description>
 <package name="M503142045" urn="urn:adsk.eagle:footprint:27583953/1" locally_modified="yes">
 <description>&lt;b&gt;M50-3142045-1&lt;/b&gt;&lt;br&gt;
 </description>
-<smd name="1" x="-12.065" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="2" x="-10.795" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="3" x="-9.525" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="4" x="-8.255" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="5" x="-6.985" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="6" x="-5.715" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="7" x="-4.445" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="8" x="-3.175" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="9" x="-1.905" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="10" x="-0.635" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="11" x="0.635" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="12" x="1.905" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="13" x="3.175" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="14" x="4.445" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="15" x="5.715" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="16" x="6.985" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="17" x="8.255" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="18" x="9.525" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="19" x="10.795" y="1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
-<smd name="20" x="12.065" y="-1.35" dx="1.7" dy="0.74" layer="1" rot="R90"/>
+<smd name="1" x="-12.065" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="2" x="-10.795" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="3" x="-9.525" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="4" x="-8.255" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="5" x="-6.985" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="6" x="-5.715" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="7" x="-4.445" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="8" x="-3.175" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="9" x="-1.905" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="10" x="-0.635" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="11" x="0.635" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="12" x="1.905" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="13" x="3.175" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="14" x="4.445" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="15" x="5.715" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="16" x="6.985" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="17" x="8.255" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="18" x="9.525" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="19" x="10.795" y="1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
+<smd name="20" x="12.065" y="-1.55" dx="2" dy="0.74" layer="1" rot="R90"/>
 <text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
 <text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
 <wire x1="-12.9" y1="0.9" x2="12.9" y2="0.9" width="0.2" layer="51"/>
@@ -1224,32 +1224,35 @@ Created by Robert Siegler</description>
 <wire x1="13.4" y1="2.7" x2="13.4" y2="-2.7" width="0.1" layer="51"/>
 <wire x1="13.4" y1="-2.7" x2="-13.4" y2="-2.7" width="0.1" layer="51"/>
 <wire x1="-13.4" y1="-2.7" x2="-13.4" y2="2.7" width="0.1" layer="51"/>
-<wire x1="-12" y1="-0.9" x2="-12.9" y2="-0.9" width="0.1" layer="21"/>
-<wire x1="-12.9" y1="-0.9" x2="-12.9" y2="0.9" width="0.1" layer="21"/>
-<wire x1="12" y1="0.9" x2="12.9" y2="0.9" width="0.1" layer="21"/>
-<wire x1="12.9" y1="0.9" x2="12.9" y2="-0.9" width="0.1" layer="21"/>
+<wire x1="-12" y1="-0.9" x2="-12.9" y2="-0.9" width="0.15" layer="21"/>
+<wire x1="-12.9" y1="-0.9" x2="-12.9" y2="0.9" width="0.15" layer="21"/>
+<wire x1="12" y1="0.9" x2="12.9" y2="0.9" width="0.15" layer="21"/>
+<wire x1="12.9" y1="0.9" x2="12.9" y2="-0.9" width="0.15" layer="21"/>
 <wire x1="0.5" y1="-0.9" x2="1" y2="-0.9" width="0.1" layer="21"/>
 <wire x1="-1" y1="0.9" x2="-0.5" y2="0.9" width="0.1" layer="21"/>
-<hole x="-12.065" y="0" drill="0.56"/>
-<hole x="-10.795" y="0" drill="0.56"/>
-<hole x="-9.525" y="0" drill="0.56"/>
-<hole x="-8.255" y="0" drill="0.56"/>
-<hole x="-6.985" y="0" drill="0.56"/>
-<hole x="-5.715" y="0" drill="0.56"/>
-<hole x="-4.445" y="0" drill="0.56"/>
-<hole x="-3.175" y="0" drill="0.56"/>
-<hole x="-1.905" y="0" drill="0.56"/>
-<hole x="-0.635" y="0" drill="0.56"/>
-<hole x="0.635" y="0" drill="0.56"/>
-<hole x="1.905" y="0" drill="0.56"/>
-<hole x="3.175" y="0" drill="0.56"/>
-<hole x="4.445" y="0" drill="0.56"/>
-<hole x="5.715" y="0" drill="0.56"/>
-<hole x="6.985" y="0" drill="0.56"/>
-<hole x="8.255" y="0" drill="0.56"/>
-<hole x="9.525" y="0" drill="0.56"/>
-<hole x="10.795" y="0" drill="0.56"/>
-<hole x="12.065" y="0" drill="0.56"/>
+<hole x="-12.065" y="0" drill="0.7"/>
+<hole x="-10.795" y="0" drill="0.7"/>
+<hole x="-9.525" y="0" drill="0.7"/>
+<hole x="-8.255" y="0" drill="0.7"/>
+<hole x="-6.985" y="0" drill="0.7"/>
+<hole x="-5.715" y="0" drill="0.7"/>
+<hole x="-4.445" y="0" drill="0.7"/>
+<hole x="-3.175" y="0" drill="0.7"/>
+<hole x="-1.905" y="0" drill="0.7"/>
+<hole x="-0.635" y="0" drill="0.7"/>
+<hole x="0.635" y="0" drill="0.7"/>
+<hole x="1.905" y="0" drill="0.7"/>
+<hole x="3.175" y="0" drill="0.7"/>
+<hole x="4.445" y="0" drill="0.7"/>
+<hole x="5.715" y="0" drill="0.7"/>
+<hole x="6.985" y="0" drill="0.7"/>
+<hole x="8.255" y="0" drill="0.7"/>
+<hole x="9.525" y="0" drill="0.7"/>
+<hole x="10.795" y="0" drill="0.7"/>
+<hole x="12.065" y="0" drill="0.7"/>
+<wire x1="12" y1="0.9" x2="-12.9" y2="0.9" width="0.15" layer="21"/>
+<wire x1="-12" y1="-0.9" x2="12.9" y2="-0.9" width="0.15" layer="21"/>
+<circle x="-12.8" y="1.6" radius="0.2" width="0.127" layer="21"/>
 </package>
 <package name="TACTILE-SWITCH" urn="urn:adsk.eagle:footprint:27666376/1">
 <smd name="3" x="-2.25" y="1.075" dx="1" dy="0.75" layer="1"/>
