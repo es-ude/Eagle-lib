@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -1284,17 +1284,17 @@ Created by Robert Siegler</description>
 <wire x1="0" y1="0.9" x2="0.8" y2="0.1" width="0.127" layer="21"/>
 </package>
 <package name="HDR_6X1_2.54MM">
-<pad name="3" x="0" y="-6.35" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="1" x="0" y="-1.27" drill="1" diameter="1.6764" shape="square" rot="R90"/>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-15.24" width="0.127" layer="21"/>
-<wire x1="1.27" y1="-15.24" x2="-1.27" y2="-15.24" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="-15.24" x2="-1.27" y2="0" width="0.127" layer="21"/>
-<text x="-1.75" y="-2.54" size="1.4224" layer="21" rot="R90" align="bottom-center">&gt;NAME</text>
-<pad name="2" x="0" y="-3.81" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="4" x="0" y="-8.89" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="5" x="0" y="-11.43" drill="1" diameter="1.6764" rot="R90"/>
-<pad name="6" x="0" y="-13.97" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="3" x="0" y="1.27" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="1" x="0" y="6.35" drill="1" diameter="1.6764" shape="square" rot="R90"/>
+<wire x1="-1.27" y1="7.62" x2="1.27" y2="7.62" width="0.127" layer="21"/>
+<wire x1="1.27" y1="7.62" x2="1.27" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="1.27" y1="-7.62" x2="-1.27" y2="-7.62" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="-7.62" x2="-1.27" y2="7.62" width="0.127" layer="21"/>
+<text x="-1.75" y="5.08" size="1.4224" layer="21" rot="R90" align="bottom-center">&gt;NAME</text>
+<pad name="2" x="0" y="3.81" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="4" x="0" y="-1.27" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="5" x="0" y="-3.81" drill="1" diameter="1.6764" rot="R90"/>
+<pad name="6" x="0" y="-6.35" drill="1" diameter="1.6764" rot="R90"/>
 </package>
 <package name="HOLE_PITCH_2.5MM">
 <pad name="P$1" x="0" y="0" drill="2.5" diameter="2.8"/>
@@ -1337,6 +1337,46 @@ Created by Robert Siegler</description>
 <wire x1="12.9" y1="0.9" x2="-12.9" y2="0.9" width="0.15" layer="21"/>
 <wire x1="-12.9" y1="-0.9" x2="12.9" y2="-0.9" width="0.15" layer="21"/>
 <circle x="-12.8" y="1.6" radius="0.2" width="0.127" layer="21"/>
+</package>
+<package name="20X1_HEADER_THT_1.27MM">
+<description>&lt;b&gt;M50-3142045-1&lt;/b&gt;&lt;br&gt;
+</description>
+<text x="0" y="2.54" size="1.27" layer="25" align="center">&gt;NAME</text>
+<wire x1="-12.9" y1="0.9" x2="12.9" y2="0.9" width="0.2" layer="51"/>
+<wire x1="12.9" y1="0.9" x2="12.9" y2="-0.9" width="0.2" layer="51"/>
+<wire x1="12.9" y1="-0.9" x2="-12.9" y2="-0.9" width="0.2" layer="51"/>
+<wire x1="-12.9" y1="-0.9" x2="-12.9" y2="0.9" width="0.2" layer="51"/>
+<wire x1="-13.4" y1="2.7" x2="13.4" y2="2.7" width="0.1" layer="51"/>
+<wire x1="13.4" y1="2.7" x2="13.4" y2="-2.7" width="0.1" layer="51"/>
+<wire x1="13.4" y1="-2.7" x2="-13.4" y2="-2.7" width="0.1" layer="51"/>
+<wire x1="-13.4" y1="-2.7" x2="-13.4" y2="2.7" width="0.1" layer="51"/>
+<wire x1="-12.9" y1="-0.9" x2="-12.9" y2="0.9" width="0.15" layer="21"/>
+<wire x1="12.9" y1="0.9" x2="12.9" y2="-0.9" width="0.15" layer="21"/>
+<wire x1="0.5" y1="-0.9" x2="1" y2="-0.9" width="0.1" layer="21"/>
+<wire x1="-1" y1="0.9" x2="-0.5" y2="0.9" width="0.1" layer="21"/>
+<wire x1="12.9" y1="0.9" x2="-12.9" y2="0.9" width="0.15" layer="21"/>
+<wire x1="-12.9" y1="-0.9" x2="12.9" y2="-0.9" width="0.15" layer="21"/>
+<circle x="-12.8" y="1.6" radius="0.2" width="0.127" layer="21"/>
+<pad name="1" x="-12.065" y="0" drill="0.5" diameter="0.6096" shape="square"/>
+<pad name="2" x="-10.795" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="3" x="-9.525" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="4" x="-8.255" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="5" x="-6.985" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="6" x="-5.715" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="7" x="-4.445" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="8" x="-3.175" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="9" x="-1.905" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="10" x="-0.635" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="11" x="0.635" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="12" x="1.905" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="13" x="3.175" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="14" x="4.445" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="15" x="5.715" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="16" x="6.985" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="17" x="8.255" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="18" x="9.525" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="19" x="10.795" y="0" drill="0.5" diameter="0.6096"/>
+<pad name="20" x="12.065" y="0" drill="0.5" diameter="0.6096"/>
 </package>
 </packages>
 <packages3d>
@@ -3195,6 +3235,33 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/M50-3142045.p
 <technology name=""/>
 </technologies>
 </device>
+<device name="THT" package="20X1_HEADER_THT_1.27MM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="16" pad="16"/>
+<connect gate="G$1" pin="17" pad="17"/>
+<connect gate="G$1" pin="18" pad="18"/>
+<connect gate="G$1" pin="19" pad="19"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="20" pad="20"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TACTILE-SWITCH" prefix="S">
@@ -3217,7 +3284,7 @@ Source: &lt;a href="https://componentsearchengine.com/Datasheets/1/M50-3142045.p
 </device>
 </devices>
 </deviceset>
-<deviceset name="MALE_HDR16X12.54MM">
+<deviceset name="MALE_HEADER_6X1_2.54MM" prefix="J">
 <gates>
 <gate name="G$1" symbol="HDR_6X1" x="2.54" y="2.54"/>
 </gates>
