@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2341,8 +2341,8 @@
 <pin name="CRESET_B" x="-22.86" y="7.62" length="middle"/>
 <pin name="SPI_SS" x="-22.86" y="2.54" length="middle"/>
 <pin name="SPI_SCK" x="-22.86" y="0" length="middle"/>
-<pin name="SPI_MOSI" x="-22.86" y="-2.54" length="middle"/>
-<pin name="SPI_MISO" x="-22.86" y="-5.08" length="middle"/>
+<pin name="SPI_SI" x="-22.86" y="-2.54" length="middle"/>
+<pin name="SPI_SO" x="-22.86" y="-5.08" length="middle"/>
 <pin name="IOB_31B" x="-22.86" y="-10.16" length="middle"/>
 <pin name="IOB_29B" x="-22.86" y="-12.7" length="middle"/>
 <pin name="IOB_46B_G0" x="-22.86" y="-17.78" length="middle"/>
@@ -3354,9 +3354,9 @@ Source: &lt;a href="http://www.xilinx.com/support/documentation/data_sheets/ds18
 <connect gate="G$1" pin="RGB0" pad="39"/>
 <connect gate="G$1" pin="RGB1" pad="40"/>
 <connect gate="G$1" pin="RGB2" pad="41"/>
-<connect gate="G$1" pin="SPI_MISO" pad="14"/>
-<connect gate="G$1" pin="SPI_MOSI" pad="17"/>
 <connect gate="G$1" pin="SPI_SCK" pad="15"/>
+<connect gate="G$1" pin="SPI_SI" pad="17"/>
+<connect gate="G$1" pin="SPI_SO" pad="14"/>
 <connect gate="G$1" pin="SPI_SS" pad="16"/>
 <connect gate="G$1" pin="VCC" pad="5 30"/>
 <connect gate="G$1" pin="VCCIO_0" pad="33"/>
