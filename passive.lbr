@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -275,6 +275,18 @@
 <smd name="2" x="1.45" y="0" dx="1.6118" dy="2.4118" layer="1"/>
 <text x="0" y="2.1549" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-2.1549" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="1.6X1.2_OSC">
+<smd name="1" x="-0.56" y="-0.375" dx="0.43" dy="0.5" layer="1" rot="R180"/>
+<smd name="4" x="-0.6" y="0.375" dx="0.35" dy="0.5" layer="1" rot="R180"/>
+<smd name="3" x="0.6" y="0.375" dx="0.35" dy="0.5" layer="1" rot="R180"/>
+<smd name="2" x="0.6" y="-0.375" dx="0.35" dy="0.5" layer="1" rot="R180"/>
+<circle x="-0.85" y="-1.04" radius="0.064028125" width="0.127" layer="21"/>
+<wire x1="-1" y1="0.8" x2="1" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1" y1="0.8" x2="1" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="1" y1="-0.8" x2="-1" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1" y1="-0.8" x2="-1" y2="0.8" width="0.127" layer="21"/>
+<text x="-1" y="1.1" size="0.8128" layer="21" ratio="15">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -714,6 +726,26 @@
 <connect gate="G$1" pin="3B" pad="6"/>
 <connect gate="G$1" pin="4A" pad="4"/>
 <connect gate="G$1" pin="4B" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DSC6001H" prefix="X">
+<description>Ultra-Small, Ultra-Low Power MEMS Oscillator
+DSC6001HE1A-016.0000</description>
+<gates>
+<gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1.6X1.2_OSC">
+<connects>
+<connect gate="G$1" pin="EN" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+<connect gate="G$1" pin="VS+" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
